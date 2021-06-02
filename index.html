@@ -5,8 +5,81 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="CSS_Files/nav-bar.css">
 </head>
-<body>
-    
+<body style="background-color: blue;">
+<!-- Navigation Bar -->
+    <div id="nav-bar">
+        <!--Brand nav logo-->
+        <div class="nav-ps-logo">
+            <img src="https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/global/header/PS_logo.png" alt="PS_Logo">
+        </div>
+        <div id="nav-menu" class="nav-menu">
+            <ul>
+                <div id="nav-menu-title">
+                    <li onclick="showPlatform()" id="platform">Platform</li>
+                    <li onclick="showProducts()" id="products">Products</li>
+                    <li onclick="showResources()" id="resources">Resources</li>
+                    <li onclick="showFor_individuals()" id="for_individuals">For Individuals</li>
+                </div>
+                <div id="nav-menu-search">
+                    <div class="nav-searchButton">
+                        <img src="images/search.png" alt="" class="smallScreen-show">
+                    </div>
+                    <li onclick="showSignIn()" id="signIn">Sign in</li>
+                    <button id="tryForFree">TRY FOR FREE</button>
+                </div>
+            </ul>
+        </div>
+        <div class="nav-icon">
+            <div class="nav-searchButton">
+                <img src="images/search.png" alt="">
+            </div>
+            <div class="nav-mobile-menu" onclick="showMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div> 
 </body>
+<script>
+    function showMenu () {
+        // document.getElementsByTagName("body")[0].setAttribute("style", "background-color: black")
+        document.getElementById("nav-menu").classList.toggle("show");
+    }
+    </script>
 </html>
+
+
+
+
+
+
+<!-- <div class="dropDown" id="platform">
+    <div>WAYS TO UPSKILL</div>
+    <a href="#">
+        <img src="images/dashboard.png" alt="">
+        <div>Courses</div>
+    </a>
+    <a href="#">
+        <img src="images/iq.png" alt="">
+        <div>Skill assessment</div>
+    </a>                            
+    <a href="#">
+        <img src="images/cloud.png" alt="">
+        <div>Labs</div>
+    </a>
+    <a href="#">
+        <img src="images/hand.png" alt="">
+        <div>Hands-on learning</div>
+    </a>
+    <a href="#">
+        <img src="images/certifications.png" alt="">
+        <div>Certification prep</div>
+    </a>
+    <a href="#">
+        <img src="images/analytics.png" alt="">
+        <div>Team efficiency</div>
+    </a>
+</div> -->
