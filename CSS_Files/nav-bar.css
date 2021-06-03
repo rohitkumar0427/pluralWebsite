@@ -24,7 +24,7 @@
     align-items: center;
     list-style: inside;
     list-style-type: none;
-    cursor:pointer;
+    /* cursor:pointer; */
     position: relative;
     background-color: black;
     z-index: 1;
@@ -89,6 +89,7 @@
 #nav-menu li {
     padding: 25px 40px;
     font-size: 1.2rem;
+    /* position: relative; */
     border-bottom: 1px solid gray;
 }
 .largeScreen-show {
@@ -107,6 +108,171 @@
     color: white;
     font-size: 1.5rem;
     text-align: center;
+}
+
+#productsDiv {
+    /* display: none; */
+    width: fit-content;
+    color: white;
+    font-size: 1.2rem;
+    background-color: black;
+    padding: 3rem;
+    position: absolute;
+    top: 100%;
+    margin: auto;
+    gap: 2rem;
+}
+.productsDiv {
+    display: none;
+}
+#productsDiv > div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+#productsDiv > div:first-child {
+    padding-right: 2rem;
+    border-right: 1px solid gray;
+}
+#productsDiv > div > div:first-child {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid gray;
+}
+#productsDiv > div > div:last-child {
+    font-weight: 900;
+}
+#productsDiv img {
+    width: 120px;
+    height: 20px;
+}
+.showProductDiv, .showPlatformDiv {
+    display: flex;
+}
+#platform {
+    display: flex;
+    align-items: center;
+}
+#platformDiv {
+    /* display: flex; */
+    /* width: 100%; */
+    max-width: 1024px;
+    min-width: 920px;
+    color: white;
+    font-size: 1.2rem;
+    background-color: black;
+    padding: 3rem;
+    position: absolute;
+    top: 100%;
+    /* right: 35%; */
+    transform: translateX(-21%);
+    gap: 2rem;
+}
+.platformDiv {
+    display: none;
+}
+.nav-subMenu-title {
+    color: gray;
+    font-size: 0.75rem;
+    margin-bottom: 1rem;
+}
+#subMenu-waysToUpskill {
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid gray;
+    padding-right: 4rem;
+    gap: 1rem;
+}
+#subMenu-waysToUpskill > div {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    margin-bottom: 1.4rem;
+}
+#subMenu-waysToUpskill > div > div {
+    font-size: 1.2rem;
+    width: max-content;
+    font-weight: 900;
+    line-height: 0;
+} 
+#rightContainer {
+    display: flex;
+    /* margin-left: -3rem; */
+}
+#rightContainer > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#subMenu-skillsFor {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+    font-size: 1.1rem;
+    padding-bottom: 20%;
+    border-bottom: 1px solid gray;
+}
+#subMenu-skillsFor > div:first-child {
+    margin-bottom: 1.7rem;
+}
+#subMenu-skillsFor > div:nth-child(n+2) {
+    margin-bottom: 1.4rem;
+    width: max-content;
+}
+#subMenu-skillsFor + div {
+    /* background-color: green; */
+    width: max-content;
+    font-size: 1.1rem;
+    margin-top: -80%;  
+    padding: 0 20px 0 0 ;  
+    border-right: 2px solid gray;
+}
+#subMenu-topTrending {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    /* flex-grow: 1; */
+}
+.subMenu-top-trending-paths {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    border-bottom: 1px solid gray;
+    padding-bottom: 62px;
+}
+.subMenu-top-trending-paths > div {
+    display: flex;
+    width: 48%;
+    height: 70px;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    background-color: #222222;
+    border-radius: 5px;
+    /* padding-left: 10p; */
+}
+#subMenu-topTrending + div {
+    font-size: 1.1rem;
+    padding-left: 5px;
+}
+.title {
+    font-size: 15px;
+}
+.title + div {
+    font-size: 14px;
+    color: gray;
+}
+.subMenu-top-trending-paths span {
+    font-weight: 900;
+    font-size: 18px;
+    color: white;
+}
+.title + div img {
+    width: 15px;
+    height: 15px;
+}
+
+.showProductDiv, .showPlatformDiv {
+    display: flex;
 }
 
 .smallScreen-show{
