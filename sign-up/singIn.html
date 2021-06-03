@@ -1,0 +1,202 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In | Pluralsight</title>
+    <style>
+        body{
+            padding: 0px;
+            margin: 0px;
+        }
+        .leftBox{
+            width: 40%;
+            border: 1px solid black;
+            background-color: #0d0f12;
+        }
+        .form{
+            width: 60%;
+            margin-top: 350px;
+            margin-left: 100px;
+        }
+        .grid{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+        }
+        .icon > img{
+            width: 18rem;
+            height: 4rem;
+            margin-right: -180px;
+        }
+        .heading{
+            margin-top: 20px;
+            font-size: 1.2rem;
+            width: 100%;
+            color: white;
+        }
+       button{
+           text-align: center;
+           width: 100%;
+           height: 35px;
+       }
+       .align{
+           margin-top: 60px;
+           text-align: center;
+           font-size: 0.9rem;
+           color: #2ea0d6;
+           font-weight: 200;
+        
+       }
+       input{
+           width: 100%;
+           height: 40px;
+           background-color: #0d0f12;
+           border-radius: 2px;
+           
+          color: white;
+          box-shadow:none;
+          
+       }
+       .form > div{
+           margin-bottom: 25px;
+           font-weight: 600;
+       }
+       .form > div:nth-child(4) > div:nth-child(1){
+          margin-bottom: 20px ; 
+          margin-top: 40px;
+       }
+       .logo{
+          position: relative;
+          top: 140px;
+          left: 170px;
+          width: 50%;
+          margin-bottom: -120px;
+       }
+       .sign{
+           background-color: #00679a;
+           border-radius: 3px;
+           color: white;
+       }
+       .create{
+        background-color: rgba(138,153,168,.25);
+        margin-top: 10px;
+        
+        border-radius: 3px;
+       }
+       .white{
+           color: white;
+          
+       }
+       .rightBox{
+           background-image: url('https://www.pluralsight.com/content/dam/pluralsight2/login/bg-gtm-2020.png');
+           height: 920px;
+          background-color: black;
+         width: 60%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: right center;
+       }
+       .textBox{
+          
+           position: relative;
+           top: 250px;
+           left: 70px;
+       }
+       .textBox > img{
+           width: 45%;
+       }
+       .try{
+           width: 20%;
+           position: relative;
+           top: 300px;
+           padding: 12px;
+           color: white;
+           background: linear-gradient(to right,#F05A28,#EC008C,#F05A28);
+           text-align: center;
+           left: 70px;
+           border-radius: 2px;
+       }
+       hr{
+        box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+    display: block;
+    unicode-bidi: isolate;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+       }
+       .footer{
+          width: 80%;
+          
+          color: white;
+          font-weight: 400;
+          text-align: center;
+          margin-top: 170px;
+          margin-left: 40px;
+          font-size: 14px;
+       }
+       
+       .term  a{
+         
+         color: white;
+         
+       }
+     
+
+    </style>
+</head>
+<body>
+    
+  <div class="grid">
+      <div class="leftBox">
+           <div class="grid logo">
+               <div class="icon"><img src="https://app.pluralsight.com/id/img/login-logo.png"/></div>
+               <div class="heading"></div>
+           </div>
+          <div class="form">
+              <div>
+                  <div class="white">Email or Username</div>
+                  <div><input type="text"/></div>
+              </div>
+              <div>
+                <div class="white">Password</div>
+                <div><input type="text"/></div>
+              </div>
+              <div >
+                  <button class="sign">Sign in</button>
+              </div>
+              <div class="align">
+                  <div>Forgot password</div>
+                  <div>Sign in with company or school</div>
+              </div>
+            <hr>
+            <div >
+                <button class="create"><div class="white">Create an account</div></button>
+            </div>
+          </div>
+          <footer class="footer">
+             Copyright @ 2004-2021 Pluralsight LLC.All rights reversed
+             <div class="term">
+                 <a href="https://www.pluralsight.com/terms">Terms of Use</a> | 
+                 <a href="https://www.pluralsight.com/privacy">Privacy Policy</a>
+             </div>
+
+
+
+
+          </footer>
+
+      </div>
+      <div class="rightBox"> 
+          <div class="textBox">
+              <img src="https://www.pluralsight.com/content/dam/pluralsight2/login/login-h1.png/"/>
+          </div>
+          <div class="try">Try for free</div>
+      </div>
+  </div>
+    
+</body>
+</html>
