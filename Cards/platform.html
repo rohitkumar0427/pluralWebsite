@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+        #platformDiv {
+            display: flex;
+            gap: 4rem;
+            margin: 4rem;
+        }
+        .nav-subMenu-title {
+            color: gray;
+            font-size: 0.75rem;
+            margin-bottom: 1rem;
+        }
+        #subMenu-waysToUpskill {
+            display: flex;
+            flex-direction: column;
+            border-right: 1px solid gray;
+            padding-right: 4rem;
+            gap: 1rem;
+        }
+        #subMenu-waysToUpskill > div {
+            display: flex;
+            gap: 1.5rem;
+            align-items: center;
+            margin-bottom: 1.4rem;
+        }
+        #subMenu-waysToUpskill > div > div {
+            font-size: 1.2rem;
+            width: max-content;
+            font-weight: 900;
+            line-height: 0;
+        } 
+        #rightContainer {
+            display: flex;
+            margin-left: -3rem;
+        }
+        #rightContainer > div {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        #subMenu-skillsFor {
+            display: flex;
+            flex-direction: column;
+            background-color: black;
+            margin-bottom: 3rem;
+            font-size: 1.1rem;
+            padding-bottom: 20%;
+            border-bottom: 1px solid gray;
+        }
+        #subMenu-skillsFor > div:first-child {
+            margin-bottom: 1.7rem;
+        }
+        #subMenu-skillsFor > div:nth-child(n+2) {
+            margin-bottom: 1.4rem;
+            width: max-content;
+        }
+        #subMenu-skillsFor + div {
+            /* background-color: green; */
+            width: max-content;
+            font-size: 1.1rem;
+            margin-top: -80%;  
+            padding: 0 20px 0 0 ;  
+            border-right: 2px solid gray;
+        }
+        #subMenu-topTrending {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+            /* flex-grow: 1; */
+        }
+        .subMenu-top-trending-paths {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            border-bottom: 1px solid gray;
+            padding-bottom: 62px;
+        }
+        .subMenu-top-trending-paths > div {
+            display: flex;
+            width: 48%;
+            height: 70px;
+            flex-direction: row;
+            align-items: center;
+            flex-wrap: nowrap;
+            background-color: #222222;
+            border-radius: 5px;
+            /* padding-left: 10p; */
+        }
+        #subMenu-topTrending + div {
+            font-size: 1.1rem;
+            padding-left: 5px;
+        }
+        .title {
+            font-size: 15px;
+        }
+        .title + div {
+            font-size: 14px;
+            color: gray;
+        }
+        .subMenu-top-trending-paths span {
+            font-weight: 900;
+            font-size: 18px;
+            color: white;
+        }
+        .title + div img {
+            width: 15px;
+            height: 15px;
+        }
+        </style>
+</head>
+<body>
+    <div id="platformDiv">
+
+<!-- SubMenu: Ways To UPSKILL -->
+
+        <div id="subMenu-waysToUpskill">
+            <div class="nav-subMenu-title">WAYS TO UPSKILL</div>
+            <div class="subMenu-platform-option">
+                <img src="../images/dashboard.png" alt="">
+                <div>Courses</div>
+            </div>
+            <div class="subMenu-platform-option">
+                <img src="../images/iq.png" alt="">
+                <div>Skill assessments</div>
+            </div>
+            <div class="subMenu-platform-option">
+                <img src="../images/cloud.png" alt="">
+                <div>Labs</div>
+            </div>
+            <div class="subMenu-platform-option">
+                <img src="../images/hand.png" alt="">
+                <div>Hands-on learning</div>
+            </div>
+            <div class="subMenu-platform-platoption">
+                <img src="../images/certifications.png" alt="">
+                <div>Certification prep</div>
+            </div>
+            <div class="subMenu-platform-option">
+                <img src="../images/analytics.png" alt="">
+                <div>Team efficiency</div>
+            </div>
+        </div>
+
+<!-- Skills For -->
+
+        <div id="rightContainer">
+            <div>
+                <div id="subMenu-skillsFor">
+                    <div class="nav-subMenu-title">SKILLS FOR</div>
+                    <div>IT ops</div>
+                    <div>Info & cyber security</div>
+                    <div>Software development</div>
+                    <div>Cloud computing</div>
+                    <div>Machine Learning/AI</div>
+                    <div>Data professional</div>
+                </div>
+                <div>See our entire course library</div>
+            </div>
+            <div>
+                <div id="subMenu-topTrending">
+                <div class="nav-subMenu-title">TOP TRENDING PATHS</div>
+                <div class="subMenu-top-trending-paths">
+                    <div>
+                        <div class="subMenu-top-trending-paths-img">
+                            <img src="../Images/group-policy-administration-ee0dacafe8.png" alt="">
+                        </div>
+                        <div>
+                            <div class="title">Microsoft Azure Deployment</div>
+                            <div>
+                                <span>4</span> Courses
+                                <span>7</span> Hours
+                                <img src="..\Images\iq.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="subMenu-top-trending-paths-img">
+                            <img src="../Images/aws-certified-devops-engineer-25d912e3da.png" alt="">
+                        </div>
+                        <div>
+                            <div class="title">AWS Operations</div>
+                            <div>
+                                <span>4</span> Courses
+                                <span>7</span> Hours
+                                <img src="..\Images\iq.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="subMenu-top-trending-paths-img">
+                            <img src="../Images/r-programming-eb2e267a97.png" alt="">
+                        </div>
+                        <div>
+                            <div class="title">Cleaning Data with R</div>
+                            <div>
+                                <span>4</span> Courses
+                                <span>7</span> Hours
+                                <img src="..\Images\iq.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="subMenu-top-trending-paths-img">
+                            <img src="../Images/python-7be70baaac.png" alt="">
+                        </div>
+                        <div>
+                            <div class="title">Core Python</div>
+                            <div>
+                                <span>4</span> Courses
+                                <span>7</span> Hours
+                                <img src="..\Images\iq.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="subMenu-top-trending-paths-img">
+                            <img src="../Images/ruby-7e88ddd5f0.png" alt="">
+                        </div>
+                        <div>
+                            <div class="title">Ruby Language Fundamentals</div>
+                            <div>
+                                <span>4</span> Courses
+                                <span>7</span> Hours
+                                <img src="..\Images\iq.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div>Checkout the technolody Index</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
