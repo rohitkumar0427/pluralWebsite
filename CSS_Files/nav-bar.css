@@ -440,8 +440,85 @@ body {
 
      /*Keep Up to date tab*/
 
+     #keepUpToDate {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        margin: 8% 0;
+    }
+    #keepUpToDate > div:first-child > h2 {
+        font-size: 2.5rem;
+        margin: 1% 0;
+        font-weight: 900;
+    }
 
+     #keepUpToDate > div:last-child{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 2rem;
+    }
+     #keepUpToDate > div:last-child > div{
+        display: flex;
+        flex-direction: column;
+        width: 23%;
+    }
+     #keepUpToDate > div:last-child > div > img{
+        border-radius: 16px;
+        overflow: hidden;
+        margin-bottom: 8%;
+    }
+     #keepUpToDate > div:last-child > div > p:nth-child(2){
+        color: darkgoldenrod;
+        font-weight: 900;
+        margin-bottom: 5%;
+    }
+     #keepUpToDate > div:last-child > div > p:nth-child(3){
+        font-size: 1.2rem;
+    }
 
+    /* Plural Story */ 
+
+    #pluralStory {
+        display: flex;
+        height: 420px;
+        background-color: teal;
+        margin-bottom: 6%;
+    }
+    #pluralStory > div {
+        width: 50%;
+    }
+    #pluralStory > div:first-child {
+        display: flex;
+        align-items: center;
+        width: 70%;
+        padding-left: 3%;
+        font-size: 6rem;
+        font-weight: 900;
+        line-height: 0.75;        
+        background-image: url(https://www.temelaksoy.com/wp-content/uploads/2020/01/cool.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    #pluralStory > div:last-child {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding-left: 3%;
+    }
+    #pluralStory h2 {
+        font-size: 2rem;
+        font-weight: 900;
+        line-height: 40px
+    }
+    #pluralStory p {
+        font-size: 1.5rem;
+    }
+    #pluralStory button {
+        background-color: black;
+        width: 40%;
+        font-size: 1rem;
+        padding: 2%;
+    }
 
 
 
