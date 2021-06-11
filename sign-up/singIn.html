@@ -44,18 +44,22 @@
            margin-top: 60px;
            text-align: center;
            font-size: 0.9rem;
-           color: #2ea0d6;
+           
            font-weight: 200;
         
+       }
+       .align div a{
+           color: #2ea0d6;
+           text-decoration: none;
        }
        input{
            width: 100%;
            height: 40px;
-           background-color: #0d0f12;
+        background: none;
            border-radius: 2px;
            
           color: white;
-          box-shadow:none;
+         
           
        }
        .form > div{
@@ -144,11 +148,32 @@
          color: white;
          
        }
-     
+       #inval{
+          width: 100%;
+          position: absolute;
+          display: flex;
+          background-color: red;
+          top: 0;
+          color: #FFFFFF;
+         
+       }
+       .invaltext{
+           margin-left: 800px;
+           margin-right: 800px;
+           padding: 0.5%;
+       }
+       .clpa{
+           padding: 0.5%;
+       }
+      
+     .try >a{
+           text-decoration: none;
+           color: #FFFFFF;
+     }
 
     </style>
 </head>
-<body>
+<body id="body">
     
   <div class="grid">
       <div class="leftBox">
@@ -159,22 +184,22 @@
           <div class="form">
               <div>
                   <div class="white">Email or Username</div>
-                  <div><input type="text"/></div>
+                  <div><input type="text" id="email"/></div>
               </div>
               <div>
                 <div class="white">Password</div>
-                <div><input type="text"/></div>
+                <div><input type="text" id="password"/></div>
               </div>
               <div >
-                  <button class="sign">Sign in</button>
+                  <button class="sign" onclick="signin()">Sign in</button>
               </div>
               <div class="align">
-                  <div>Forgot password</div>
-                  <div>Sign in with company or school</div>
+                  <div><a href="forgetPassword.html" id="forg">Forgot password?</a></div>
+                  <div><a href="singinschool.html" id="signw">Sign in with company or school</a></div>
               </div>
             <hr>
             <div >
-                <button class="create"><div class="white">Create an account</div></button>
+                <button class="create" ><div class="white">Create an account</div></button>
             </div>
           </div>
           <footer class="footer">
@@ -194,9 +219,83 @@
           <div class="textBox">
               <img src="https://www.pluralsight.com/content/dam/pluralsight2/login/login-h1.png/"/>
           </div>
-          <div class="try">Try for free</div>
+          <div class="try"><a href="../try-for-free/tryforfree.html">Try for free</a></div>
       </div>
   </div>
     
 </body>
 </html>
+<script>
+
+document.getElementById("forg").addEventListener("mouseover",function(){
+    let x=document.getElementById("forg");
+    x.style.textDecoration="underline";
+    x.style.color="#005685"
+})
+document.getElementById("forg").addEventListener("mouseleave",function(){
+    let x=document.getElementById("forg");
+    x.style.textDecoration="none"
+    x.style.color="#2ea0d6"
+})
+
+document.getElementById("signw").addEventListener("mouseover",function(){
+    let x=document.getElementById("signw");
+    x.style.textDecoration="underline";
+    x.style.color="#005685"
+})
+document.getElementById("signw").addEventListener("mouseleave",function(){
+    let x=document.getElementById("signw");
+    x.style.textDecoration="none"
+    x.style.color="#2ea0d6"
+})
+
+
+
+
+
+
+
+
+function signin(){
+
+
+let k=0;
+let arr=JSON.parse(localStorage.getItem("userinformation"));
+let em=document.getElementById("email").value
+let pass=document.getElementById("password").value
+
+for(let i=0;i<arr.length;i++){
+    
+    if(arr[i].email==em && arr[i].password==pass){
+        k++;
+        break;
+    }
+}
+
+if(k==0){
+ let d
+let a=document.getElementById("body");
+let div=document.createElement('div');
+div.setAttribute("id","inval")
+
+div.innerHTML=`<div class="invaltext">Invalid username or password</div><div id="closee" class="clpa">&#x2715</div>`
+
+a.append(div)
+d=document.getElementById("closee")
+d.addEventListener("click",close)
+}
+else{
+    alert("loged in")
+}
+
+}
+
+function close(){
+  
+    let x=document.getElementById("inval");
+    x.remove()
+   
+}
+
+
+</script>
