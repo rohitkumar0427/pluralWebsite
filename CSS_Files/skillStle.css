@@ -1,0 +1,176 @@
+     body{
+     background-color: black;}
+     #container1{
+         color: white;
+         height: 20%;
+
+     }
+     #container2{
+       height: 600px;
+       color: white;
+       
+     }
+      h1{
+         font-size: 70px;
+        margin-left: 2%;
+        margin-top: 50px;
+    
+
+     }
+     #container2 p{
+         font-size: 20px;
+         margin-left: 2%;
+         margin-top: 20px;
+     }
+    
+
+     #container2 img{
+      /* margin-top: 8%; */
+      margin-left: 2%;
+     }
+     div>button{
+         margin-top: 50px;
+         margin-left: 2%;
+         padding-top: 10px;
+         padding-left: 20px;
+         padding-right: 20px;
+         padding-bottom: 10px;
+
+         color: white;
+        height: 50px;
+        width: 180px;
+        background-color:rgb(239,83,47);
+        
+        font-weight: bold;
+
+
+     }
+     #container3{
+        height: 500px;
+        margin-top: 10%;
+        background-color: rgb(24,24,24);
+         
+      }
+      #container3 >div{
+          width: 40%;
+          float: left;
+          margin-right: 4%;
+      }
+      #container3 >div >div{
+        width: 60%;
+        float: left;
+        margin-left: 4%;
+        
+    }
+      h2{
+        font-size: 50px;
+       margin-left: 2%;
+       margin-top: 20%;
+   
+
+    }
+    #container4{
+        height:1090px;
+         margin-top: 10%; 
+        background-color: cadetblue;
+         
+      }
+    #container4 > div{
+        height: 20%;
+        margin: auto;
+        text-align: center;
+        
+
+
+    }
+    #container4 > div > div{
+        height: 80%;
+        /* margin: auto; */
+    }
+h4{
+    font-size: 35px;
+    font-weight: normal;
+    margin-top: 2%;
+    text-align: center;
+    margin-bottom: 2%;
+}
+    
+li{
+
+display: inline-block;
+margin: 15px;
+
+}    
+li a {
+    color: #999;
+    font-size: 25px;
+}
+
+li a:hover {
+    color:white;
+    font-size: 25px ;
+    border-bottom: 5px solid rgb(236,0,140);
+}
+
+#container4 hr{
+    margin-left: 20%;
+    margin-right: 10%;
+
+
+}
+.topMargin{
+    margin-top: -5%;
+}
+ .card{
+   background-color: rgb(34,34,34);
+   height: 15%;
+   width:28%;
+   margin: 1%;
+   padding: 2%;
+   float: left;
+}
+.leftmargin
+{
+    margin-left: 20%;
+}
+.card .leftmargin>div{
+    float:left;
+    width: 20%;
+
+}
+.card .leftmargin>div >div{
+    float:left;
+    width: 30%;
+
+}
+#container5{
+    height: 15%;
+    background-color: black;
+    
+}
+#container5 > div{
+    width: 50%;
+    float:left;
+}
+#container5 > div >div{
+    width: 50%;
+    float:left;
+}
+
+#container5 > div > div > button{
+    margin-top: 50px;
+    margin-left: 0.2%;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+
+    color: white;
+   height: 50px;
+   width: 180px;
+   background-color:rgb(239,83,47);
+   
+   font-weight: bold;
+
+
+}

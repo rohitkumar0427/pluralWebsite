@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pluralsight</title>
+    <link rel="stylesheet" href="CSS_Files/nav-bar.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <div id="nav-bar">
+      <!--Brand nav logo-->
+      <div class="nav-ps-logo">
+        <img
+          src="https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/global/header/PS_logo.png"
+          alt="PS_Logo"
+        />
+      </div>
+      <div id="nav-menu" class="nav-menu">
+        <ul>
+          <div id="nav-menu-title">
+            <li onclick="showPlatform()" id="platform" >
+              Platform
+              <div id="platformDiv" class="platformDiv dropDownContent">
+                <!-- SubMenu: Ways To UPSKILL -->
+
+                <div id="subMenu-waysToUpskill">
+                  <div class="nav-subMenu-title">WAYS TO UPSKILL</div>
+                  <div class="subMenu-platform-option">
+                    <img src="Images/dashboard.png" alt="" />
+                    <div>Courses</div>
+                  </div>
+                  <div class="subMenu-platform-option">
+                    <img src="Images/iq.png" alt="" />
+                    <div><a href="platform/skillsIq/skillsIq.html">Skill assessments</a></div>
+                  </div>
+                  <div class="subMenu-platform-option">
+                    <img src="Images/cloud.png" alt="" />
+                    <div>Labs</div>
+                  </div>
+                  <div class="subMenu-platform-option">
+                    <img src="Images/hand.png" alt="" />
+                    <div>Hands-on learning</div>
+                  </div>
+                  <div class="subMenu-platform-platoption">
+                    <img src="Images/certifications.png" alt="" />
+                    <div>Certification prep</div>
+                  </div>
+                  <div class="subMenu-platform-option">
+                    <img src="Images/analytics.png" alt="" />
+                    <div>Team efficiency</div>
+                  </div>
+                </div>
+
+                <!-- Skills For -->
+
+                <div id="rightContainer">
+                  <div>
+                    <div id="subMenu-skillsFor">
+                      <div class="nav-subMenu-title">SKILLS FOR</div>
+                      <div>IT ops</div>
+                      <div>Info & cyber security</div>
+                      <div>Software development</div>
+                      <div>Cloud computing</div>
+                      <div>Machine Learning/AI</div>
+                      <div>Data professional</div>
+                    </div>
+                    <div>See our entire course library</div>
+                  </div>
+                  <div>
+                    <div id="subMenu-topTrending">
+                      <div class="nav-subMenu-title">TOP TRENDING PATHS</div>
+                      <div class="subMenu-top-trending-paths">
+                        <div>
+                          <div class="subMenu-top-trending-paths-img">
+                            <img
+                              src="Images/group-policy-administration-ee0dacafe8.png"
+                              alt=""
+                            />
+                          </div>
+                          <div>
+                            <div class="title">Microsoft Azure Deployment</div>
+                            <div>
+                              <span>4</span> Courses <span>7</span> Hours
+                              <img src="Images\iq.png" alt="" />
+                            </div>
+                          </div>
+                        </div>
+                        <div>
+                          <div class="subMenu-top-trending-paths-img">
+                            <img
+                              src="Images/aws-certified-devops-engineer-25d912e3da.png"
+                              alt=""
+                            />
+                          </div>
+                          <div>
+                            <div class="title">AWS Operations</div>
+                            <div>
+                              <span>4</span> Courses <span>7</span> Hours
+                              <img src="Images\iq.png" alt="" />
+                            </div>
+                          </div>
+                        </div>
+                        <div>
+                          <div class="subMenu-top-trending-paths-img">
+                            <img
+                              src="Images/r-programming-eb2e267a97.png"
+                              alt=""
+                            />
+                          </div>
+                          <div>
+                            <div class="title">Cleaning Data with R</div>
+                            <div>
+                              <span>4</span> Courses <span>7</span> Hours
+                              <img src="Images\iq.png" alt="" />
+                            </div>
+                          </div>
+                        </div>
+                        <div>
+                          <div class="subMenu-top-trending-paths-img">
+                            <img src="Images/python-7be70baaac.png" alt="" />
+                          </div>
+                          <div>
+                            <div class="title">Core Python</div>
+                            <div>
+                              <span>4</span> Courses <span>7</span> Hours
+                              <img src="Images\iq.png" alt="" />
+                            </div>
+                          </div>
+                        </div>
+                        <div>
+                          <div class="subMenu-top-trending-paths-img">
+                            <img src="Images/ruby-7e88ddd5f0.png" alt="" />
+                          </div>
+                          <div>
+                            <div class="title">Ruby Language Fundamentals</div>
+                            <div>
+                              <span>4</span> Courses <span>7</span> Hours
+                              <img src="Images\iq.png" alt="" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div>Checkout the technolody Index</div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li onclick="showProducts()" id="products">
+              Products
+              <div id="productsDiv" class="productsDiv dropDownContent">
+                <div>
+                  <div>
+                    <img src="Images/logo-skills.png" alt="" />
+                    <div>Build tech skills to drive results</div>
+                  </div>
+                  <div>
+                    <div>What is Skills?</div>
+                    <div>View Plans</div>
+                  </div>
+                </div>
+                <div>
+                  <div>
+                    <img src="Images/Flow_Logo_white.png" alt="" />
+                    <div>Get insights into your workflow</div>
+                  </div>
+                  <div>
+                    <div>What is Flow?</div>
+                    <div>View Plans</div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li onclick="showResources()" id="resources">Resources</li>
+            <li onclick="showFor_individuals()" id="for_individuals">
+              For Individuals
+            </li>
+          </div>
+          <div id="nav-menu-search">
+            <div class="nav-searchButton">
+              <img src="Images/search.png" alt="" class="smallScreen-show" />
+            </div>
+            <li onclick="showSignIn()" id="signIn">Sign in</li>
+            <button id="tryForFree" onclick="window.open('try-for-free/tryforfree.html', '_top')">TRY FOR FREE</button>
+          </div>
+        </ul>
+      </div>
+      <div class="nav-icon">
+        <div class="nav-searchButton">
+          <img src="Images/search.png" alt="" />
+        </div>
+        <div class="nav-mobile-menu" onclick="showMenu()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="changePics">
+      <img
+        src="Images/image-res.img.9019ccb5-fc1c-4457-9f07-1ada08152b70.jpg"
+        alt=""
+      />
+    </div>
+
+    <div id="trendingTech">
+      <div>
+        <p class="path">TRENDING TECHNOLOGIES</p>
+        <h2>Popular topics to learn now</h2>
+        <p>
+          Not sure what technologies to focus on? The Technology Index ranks
+          850+ technologies by their relative popularity. See what’s topping the
+          charts and get recommended courses to skill up.
+        </p>
+
+        <a href="#">View the index </a>
+      </div>
+
+      <div class="landingPageCourses">
+        <div class="courseTitle">
+          <div>
+            <p class="path">PATH</p>
+            <div class="title">Javascript</div>
+            <div><span>4</span> Courses</div>
+            <a href="#">Take a look</a>
+          </div>
+          <div>
+            <img src="Images/javascript-542e10ea6e.png" alt="" />
+          </div>
+        </div>
+        <div class="courseTitle">
+          <div>
+            <p class="path">PATH</p>
+            <div class="title">Javascript</div>
+            <div><span>4</span> Courses</div>
+            <a href="#">Take a look</a>
+          </div>
+          <div>
+            <img src="Images/javascript-542e10ea6e.png" alt="" />
+          </div>
+        </div>
+        <div class="courseTitle">
+          <div>
+            <p class="path">PATH</p>
+            <div class="title">Javascript</div>
+            <div><span>4</span> Courses</div>
+            <a href="#">Take a look</a>
+          </div>
+          <div>
+            <img src="Images/javascript-542e10ea6e.png" alt="" />
+          </div>
+        </div>
+        <div class="courseTitle">
+          <div>
+            <p class="path">PATH</p>
+            <div class="title">Javascript</div>
+            <div><span>4</span> Courses</div>
+            <a href="#">Take a look</a>
+          </div>
+          <div>
+            <img src="Images/javascript-542e10ea6e.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="latestFeatures">
+      <div>
+        <p class="path">SEE WHAT`S NEW</p>
+        <h2>Our latest features</h2>
+      </div>
+      <div>
+        <div>
+          <div><img src="Images/logo-skills.png" alt="" />LABS</div>
+          <div class="latestFeaturesHeading">
+            Create better cloud outcomes with hands-on experience
+          </div>
+          <p>
+            Your teams need the right skills and a place to practice to ensure
+            they’re ready to deliver on your cloud objectives. Labs enable
+            learners to get hands-on practice in a provisioned cloud environment
+            in AWS, Azure and Google Cloud (Google Cloud powered by Quiklabs).
+          </p>
+          <a href="#">Learn more</a>
+        </div>
+        <div>
+          <img src="Images/Cloud-labs-image2x.png" alt="" />
+        </div>
+      </div>
+      <div>
+        <div>
+          <img src="Images/certification-prep.png" alt="" />
+          <div class="latestFeaturesHeading">
+            Empower your teams to grow their skills and their careers
+          </div>
+          <p>
+            Prepare your team for certification exams with our expert authored
+            content and practice exams.
+          </p>
+          <a href="#">Learn more</a>
+        </div>
+        <div>
+          <img src="Images/certification-prep.png" alt="" />
+          <div class="latestFeaturesHeading">
+            Empower your teams to grow their skills and their careers
+          </div>
+          <p>
+            Prepare your team for certification exams with our expert authored
+            content and practice exams.
+          </p>
+          <a href="#">Learn more</a>
+        </div>
+        <div>
+          <img src="Images/certification-prep.png" alt="" />
+          <div class="latestFeaturesHeading">
+            Empower your teams to grow their skills and their careers
+          </div>
+          <p>
+            Prepare your team for certification exams with our expert authored
+            content and practice exams.
+          </p>
+          <a href="#">Learn more</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="keepUpToDate">
+      <div>
+        <p class="path">KEEP UP TO DATE</p>
+        <h2>Discover more about Pluralsight</h2>
+      </div>
+
+      <div>
+        <div>
+          <img
+            src="Images/image-res.img.8c1f7681-3672-4e1e-8ad5-2968051e6c84.jpg"
+            alt=""
+          />
+          <p>GUIDE: NAVIGATING BETWEEN WATERFALL AND AGILE</p>
+          <p>Make the move without getting stuck in the wagile trap.</p>
+        </div>
+        <div>
+          <img
+            src="Images/image-res.img.8c1f7681-3672-4e1e-8ad5-2968051e6c84.jpg"
+            alt=""
+          />
+          <p>GUIDE: NAVIGATING BETWEEN WATERFALL AND AGILE</p>
+          <p>Make the move without getting stuck in the wagile trap.</p>
+        </div>
+        <div>
+          <img
+            src="Images/image-res.img.8c1f7681-3672-4e1e-8ad5-2968051e6c84.jpg"
+            alt=""
+          />
+          <p>GUIDE: NAVIGATING BETWEEN WATERFALL AND AGILE</p>
+          <p>Make the move without getting stuck in the wagile trap.</p>
+        </div>
+        <div>
+          <img
+            src="Images/image-res.img.8c1f7681-3672-4e1e-8ad5-2968051e6c84.jpg"
+            alt=""
+          />
+          <p>GUIDE: NAVIGATING BETWEEN WATERFALL AND AGILE</p>
+          <p>Make the move without getting stuck in the wagile trap.</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="pluralStory">
+      <div><p>My <br/> Pluralsight <br/> Story</p></div>
+      <div>
+        <h2>FROM SOLDIER TO IT CERTIFIED</h2>
+        <p>
+          Ryan Chasteauneuf had always dreamed of being a soldier. After
+          disaster struck in Afghanistan, he was forced to abandon his lifelong
+          dream and start over. Driven to achieve in the face of adversity, he
+          turned to Pluralsight to upskill.
+        </p>
+        <button>SEE RYAN`S STORY</button>
+      </div>
+    </div>
+
+    <div id="followUs">
+      <div>
+        <div class="path">FOLLOWS US</div>
+        <div>Share Your Skills</div>
+      </div>
+
+      <div class="twitterProfiles">
+        <button class="prev" onclick="prevFunction()">&#10094;</button>
+
+        <div class="twitterParent">
+          <div class="twitter">
+            <blockquote class="twitter-tweet">
+              <p lang="en" dir="ltr">
+                I’ve been banging my head against a wall trying to figure out
+                why a telemetry subscription on a csr1000v in CML was stuck in
+                “connecting” mode. My configs looked good. Turns out all I
+                needed to run was “no netconf legacy” 🤦🏻‍♂️
+              </p>
+              &mdash; William Masci (@bill_ver3)
+              <a
+                href="https://twitter.com/bill_ver3/status/1356642429890224130?ref_src=twsrc%5Etfw"
+              >
+                February 2, 2021
+              </a>
+            </blockquote>
+          </div>
+          <div class="twitter">
+            <blockquote class="twitter-tweet">
+              <p lang="en" dir="ltr">
+                I’ve been banging my head against a wall trying to figure out
+                why a telemetry subscription on a csr1000v in CML was stuck in
+                “connecting” mode. My configs looked good. Turns out all I
+                needed to run was “no netconf legacy” 🤦🏻‍♂️
+              </p>
+              &mdash; William Masci (@bill_ver3)
+              <a
+                href="https://twitter.com/bill_ver3/status/1356642429890224130?ref_src=twsrc%5Etfw"
+              >
+                February 2, 2021
+              </a>
+            </blockquote>
+          </div>
+          <div class="twitter">
+            <blockquote class="twitter-tweet">
+              <p lang="en" dir="ltr">
+                I’ve been banging my head against a wall trying to figure out
+                why a telemetry subscription on a csr1000v in CML was stuck in
+                “connecting” mode. My configs looked good. Turns out all I
+                needed to run was “no netconf legacy” 🤦🏻‍♂️
+              </p>
+              &mdash; William Masci (@bill_ver3)
+              <a
+                href="https://twitter.com/bill_ver3/status/1356642429890224130?ref_src=twsrc%5Etfw"
+              >
+                February 2, 2021
+              </a>
+            </blockquote>
+          </div>
+          <div class="twitter">
+            <blockquote class="twitter-tweet">
+              <p lang="en" dir="ltr">
+                Promise yourself to be so strong that nothing can disturb your
+                peace of mind. A peaceful mind creates a peaceful life.
+              </p>
+              &mdash; Law of Attraction (@LAWOFATTRACTlON)
+              <a
+                href="https://twitter.com/LAWOFATTRACTlON/status/1403094698600828938?ref_src=twsrc%5Etfw"
+                >June 10, 2021</a
+              >
+            </blockquote>
+          </div>
+          <div class="twitter">
+            <blockquote class="twitter-tweet">
+              <p lang="en" dir="ltr">
+                I’ve been banging my head against a wall trying to figure out
+                why a telemetry subscription on a csr1000v in CML was stuck in
+                “connecting” mode. My configs looked good. Turns out all I
+                needed to run was “no netconf legacy” 🤦🏻‍♂️
+              </p>
+              &mdash; William Masci (@bill_ver3)
+              <a
+                href="https://twitter.com/bill_ver3/status/1356642429890224130?ref_src=twsrc%5Etfw"
+              >
+                February 2, 2021
+              </a>
+            </blockquote>
+          </div>
+          <div class="twitter">
+            <blockquote class="twitter-tweet">
+              <p lang="en" dir="ltr">
+                I’ve been banging my head against a wall trying to figure out
+                why a telemetry subscription on a csr1000v in CML was stuck in
+                “connecting” mode. My configs looked good. Turns out all I
+                needed to run was “no netconf legacy” 🤦🏻‍♂️
+              </p>
+              &mdash; William Masci (@bill_ver3)
+              <a
+                href="https://twitter.com/bill_ver3/status/1356642429890224130?ref_src=twsrc%5Etfw"
+              >
+                February 2, 2021
+              </a>
+            </blockquote>
+          </div>
+        </div>
+
+        <button class="next" onclick="nextFunction()">&#10095;</button>
+      </div>
+    </div>
+
+  </body>
+  <script src="Js_files\index.js"></script>
+  <script
+    async
+    src="https://platform.twitter.com/widgets.js"
+    charset="utf-8"
+  ></script>
+</html>
