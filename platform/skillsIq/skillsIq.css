@@ -1,0 +1,76 @@
+body {
+    background-color: black;
+}
+
+#showSearchButtons {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    gap: 1rem;
+    padding: auto;
+    color: white;
+}
+#showSearchButtons > li {
+    padding: 1rem;
+    border-bottom: 5px solid transparent;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+#showSearchButtons > li:hover {
+    padding: 1rem;
+    font-size: 1.5rem;
+    opacity: 0.8;
+    border-bottom:5px solid magenta;
+}
+#skillsData {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    color: white;
+    width: 75%;
+    margin: auto;
+}
+
+.divContainer{
+    background-color: #222222;
+    display: flex;
+    flex-wrap: wrap;
+    width: 48%;
+    align-content: center;
+    margin: 1%;
+}
+
+.imgContainer, .imgContainer > img {
+    width: 100px;
+    height: 100px;
+}
+.metaContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 4%;
+}
+.metaContainer * {
+    margin: 0;
+    padding: 0;
+}
+.metaContainer > div:first-child {
+    font-size: 1.5rem;
+    font-weight:200;
+}
+.metaContainer > div:last-child {
+    /* font-size: 1.5rem; */
+    font-weight: 300;
+    color: gray;
+}
+.metaContainer span {
+    font-size: 1.2rem;
+    color: white;
+}
+@media only screen and (min-width: 480px) and (max-width: 1024px) {
+    .divContainer{
+        width: 100%;
+    }
+}
