@@ -251,9 +251,18 @@ document.getElementById("signw").addEventListener("mouseleave",function(){
 
 
 
+let userin=[
+    {
+        email:"suresh@gamil.com",
+        password:"suresh123"
+    },
+    {
+        email:"dhruva@gmail.com",
+        password:"dhruva123"
+    }
+]
 
-
-
+localStorage.setItem('userinformation',JSON.stringify(userin))
 
 
 function signin(){
