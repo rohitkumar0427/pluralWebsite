@@ -1,0 +1,84 @@
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signin</title>
+    <style>
+        body{
+            background: #0d0f12;
+            line-height: 30px;
+        }
+        .outer{
+            width: 14%;
+        }
+        h1{
+            font-family: 'Noto Sans JP', sans-serif;
+            color: hsla(0,0%,100%,.95);;
+            font-size: 44px;
+        }
+        .send{
+            width: 100%;
+            margin: auto;
+            padding: 2%;
+            text-align: center;
+            background-color: #0074AB;
+            border-radius: 2px;
+            margin-bottom:20px;
+            margin-top: 20px;
+        }
+        
+        p,a,label{
+            color: #FFFFF2;
+            line-height: 20px;
+        }
+     
+       .outer{
+           position: absolute;
+           top: 200px;
+           left: 800px;
+       }
+       img{
+           width: 15%;
+           position: absolute;
+           top: 100px;
+           left: 790px;
+       }
+       input{
+           width: 100%;
+           background: none;
+           height: 30px;
+       }
+       a{
+           text-decoration: none;
+       }
+       p{
+           font-size: 16px;
+       }
+       .last{
+           color: #FFFFFFF2;
+       }
+
+    </style>
+</head>
+<body>
+      
+        <img src="https://app.pluralsight.com/id/img/login-logo.png"/>
+   
+        <div class="outer">
+        <p>Have an account through your company,school, or organization? Enter your URL below to sign in</p>
+        <label>company URL</label>
+        <div></div>
+        <input type="text" id="url"/>
+        <div class="send">
+            <a>Sign in</a>
+        </div>
+        <div class="last">Have a personal account? <a style="color: #2ea0d6;" href="singIn.html">Sign in</a></div>
+
+    </div>
+    
+</body>
+</html>
