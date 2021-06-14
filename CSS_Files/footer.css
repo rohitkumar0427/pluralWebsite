@@ -1,0 +1,105 @@
+h2{
+    font-weight: 900;
+    font-size: 15px;
+
+
+}
+
+.footer{
+    
+    display: flex;
+    flex-flow: row wrap;
+    margin: 6%;
+    
+    color:teal;
+    /* background: thistle; */
+   
+    margin-bottom: 4%;
+
+}
+.footer > *{
+   flex:1 ;
+     /* flex-grow: 2; */
+}
+.footer ul{
+   list-style: none;
+   padding-left: 0;
+   margin: auto;
+   
+}
+.footer li{
+   line-height: 2em;
+
+   
+}
+.footer a{
+   text-decoration: none;
+}
+.box li{
+   font-size: 12px;
+}
+.mainLi{
+   float: left;
+   margin: 6%;
+}
+.footerLast{
+   background-color: rgb(34,34,34);
+   /* height: 5%; */
+   margin-right: 20% !important
+
+}
+
+
+@media only screen and (min-width: 480px) and (max-width: 1024px) {
+ .footer >*{
+     flex:1 50%;
+ }
+ .footer{
+     flex: 2 0px;
+ }
+
+   
+} 
+@media only screen and (min-width: 1024px) {
+ .footer >* {
+     flex:1 50%;
+ }
+ .footer{
+     flex: 2 0px;
+ }
+
+   
+} 
+
+/* social media connects */
+
+.social-footer {
+padding: 1rem;
+background: rgb(34,34,34);
+display: flex;
+
+}
+
+footer {
+ background-color: rgb(34,34,34);
+color: white;
+padding: 15px;
+text-align: center;
+}
+
+.fa{
+color: black;
+font-size: 50px;
+
+}
+.social-footer-left{
+float: left;
+}
+.social-footer-mid{
+float: left;
+
+margin-left:-60px;
+}
+.social-media-footer-right{
+margin-left: 50px;
+}
