@@ -4,26 +4,38 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pluralsight</title>
+    <title>Document</title>
     <link rel="stylesheet" href="CSS_Files/nav-bar.css" />
+    <link rel="stylesheet" href="CSS_Files/footer.css" />
+    <style>
+    .social-footer{
+     margin: auto;
+
+    }
+
+
+
+    </style>
+    
   </head>
   <body>
     <!-- Navigation Bar -->
     <div id="nav-bar">
       <!--Brand nav logo-->
       <div class="nav-ps-logo">
-        <img
+        <a href="index.html"><img
           src="https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/global/header/PS_logo.png"
           alt="PS_Logo"
-        />
+        /></a>
       </div>
       <div id="nav-menu" class="nav-menu">
         <ul>
           <div id="nav-menu-title">
-            <li onclick="showPlatform()" id="platform" >
+            <li onclick="showPlatform()" id="platform">
               Platform
-              <div id="platformDiv" class="platformDiv dropDownContent">
-                <!-- SubMenu: Ways To UPSKILL -->
+              <div id="platformDiv" class="platformDiv">
+                 SubMenu: Ways To UPSKILL
+                <div></div>
 
                 <div id="subMenu-waysToUpskill">
                   <div class="nav-subMenu-title">WAYS TO UPSKILL</div>
@@ -33,7 +45,7 @@
                   </div>
                   <div class="subMenu-platform-option">
                     <img src="Images/iq.png" alt="" />
-                    <div><a href="platform/skillsIq/skillsIq.html">Skill assessments</a></div>
+                    <div>Skill assessments</div>
                   </div>
                   <div class="subMenu-platform-option">
                     <img src="Images/cloud.png" alt="" />
@@ -51,7 +63,7 @@
                     <img src="Images/analytics.png" alt="" />
                     <div>Team efficiency</div>
                   </div>
-                </div>
+                </div> -->
 
                 <!-- Skills For -->
 
@@ -150,7 +162,7 @@
             </li>
             <li onclick="showProducts()" id="products">
               Products
-              <div id="productsDiv" class="productsDiv dropDownContent">
+              <div id="productsDiv" class="productsDiv">
                 <div>
                   <div>
                     <img src="Images/logo-skills.png" alt="" />
@@ -183,7 +195,7 @@
               <img src="Images/search.png" alt="" class="smallScreen-show" />
             </div>
             <li onclick="showSignIn()" id="signIn">Sign in</li>
-            <button id="tryForFree" onclick="window.open('try-for-free/tryforfree.html', '_top')">TRY FOR FREE</button>
+            <button id="tryForFree">TRY FOR FREE</button>
           </div>
         </ul>
       </div>
@@ -382,121 +394,105 @@
         <button>SEE RYAN`S STORY</button>
       </div>
     </div>
+    <div style="clear: both;"></div>
+<!-- Fixed footer -->
+<div>
+    <footer class="footer">
+      <ul>
+         
+          <li class="mainLi">
+              <h2>SOLUTIONS</h2>
+              <ul class="box">
+              <li><a href="#">Pluralsight Skills</a></li>
+              <li><a href="#">Pluralsight Flow</a></li>
+              <li><a href="#">Government</a></li>
+              <li><a href="#">Gift of Pluralsight</a></li>
+              <li><a href="#">View Pricing</a></li>
+              <li><a href="#">Contact Sales</a></li>
+              <li><a href="#">Skill up for free</a></li>
+              </ul>
+          </li>
+          <li class="mainLi">
+              <h2>PLATFORM</h2>
+              <ul class="box">
+              <li><a href="#">Browse library</a></li>
+              <li><a href="#">Role IQ</a></li>
+              <li><a href="#">Skill IQ</a></li>
+              <li><a href="#">Iris</a></li>
+              <li><a href="#">Authors</a></li>
+              <li><a href="#">Professionals Services</a></li>
+              <li><a href="#">Technology Index</a></li>
+              </ul>
+          </li>
+          <li class="mainLi">
+              <h2>COMPANY</h2>
+              <ul class="box">
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Customer stories</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Newsroom</a></li>
+              <li><a href="#">Resource center</a></li>
+              <li><a href="#">Guides</a></li>
+              </ul>
+          </li>
+          <li class="mainLi">
+              <h2>RESOURCES</h2>
+              <ul class="box">
+              <li><a href="#">Download Pluralsight</a></li>
+              <li><a href="#">Events</a></li>
+              <li><a href="#">Teach</a></li>
+              <li><a href="#">Partners</a></li>
+              <li><a href="#">Affiliate program</a></li>
+              <li><a href="#">PluralsightOne.org</a></li>
+              <li><a href="#">Subscribe</a></li>
+              </ul>
+          </li>
+          <li class="mainLi">
+              <h2>SUPPORT</h2>
+              <ul class="box">
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Help center</a></li>
+              <li><a href="#">IP whitelist</a></li>
+              <li><a href="#">Sitemap</a></li>
+              </ul>
+          </li>
 
-    <div id="followUs">
-      <div>
-        <div class="path">FOLLOWS US</div>
-        <div>Share Your Skills</div>
+              </ul>
+          </li>
+      </ul>
+  </footer>
+  <hr>
+     <div style="clear:both;"></div>
+ 
+     <footer class="social-footer" style="margin-left: 6%;">
+      <div class="social-footer-left">
+        <a href="#"><img class="logo" src="Images/plural_footerLogo.png" height="20px" width="20px"></a>
+       
       </div>
-
-      <div class="twitterProfiles">
-        <button class="prev" onclick="prevFunction()">&#10094;</button>
-
-        <div class="twitterParent">
-          <div class="twitter">
-            <blockquote class="twitter-tweet">
-              <p lang="en" dir="ltr">
-                I’ve been banging my head against a wall trying to figure out
-                why a telemetry subscription on a csr1000v in CML was stuck in
-                “connecting” mode. My configs looked good. Turns out all I
-                needed to run was “no netconf legacy” 🤦🏻‍♂️
-              </p>
-              &mdash; William Masci (@bill_ver3)
-              <a
-                href="https://twitter.com/bill_ver3/status/1356642429890224130?ref_src=twsrc%5Etfw"
-              >
-                February 2, 2021
-              </a>
-            </blockquote>
-          </div>
-          <div class="twitter">
-            <blockquote class="twitter-tweet">
-              <p lang="en" dir="ltr">
-                I’ve been banging my head against a wall trying to figure out
-                why a telemetry subscription on a csr1000v in CML was stuck in
-                “connecting” mode. My configs looked good. Turns out all I
-                needed to run was “no netconf legacy” 🤦🏻‍♂️
-              </p>
-              &mdash; William Masci (@bill_ver3)
-              <a
-                href="https://twitter.com/bill_ver3/status/1356642429890224130?ref_src=twsrc%5Etfw"
-              >
-                February 2, 2021
-              </a>
-            </blockquote>
-          </div>
-          <div class="twitter">
-            <blockquote class="twitter-tweet">
-              <p lang="en" dir="ltr">
-                I’ve been banging my head against a wall trying to figure out
-                why a telemetry subscription on a csr1000v in CML was stuck in
-                “connecting” mode. My configs looked good. Turns out all I
-                needed to run was “no netconf legacy” 🤦🏻‍♂️
-              </p>
-              &mdash; William Masci (@bill_ver3)
-              <a
-                href="https://twitter.com/bill_ver3/status/1356642429890224130?ref_src=twsrc%5Etfw"
-              >
-                February 2, 2021
-              </a>
-            </blockquote>
-          </div>
-          <div class="twitter">
-            <blockquote class="twitter-tweet">
-              <p lang="en" dir="ltr">
-                Promise yourself to be so strong that nothing can disturb your
-                peace of mind. A peaceful mind creates a peaceful life.
-              </p>
-              &mdash; Law of Attraction (@LAWOFATTRACTlON)
-              <a
-                href="https://twitter.com/LAWOFATTRACTlON/status/1403094698600828938?ref_src=twsrc%5Etfw"
-                >June 10, 2021</a
-              >
-            </blockquote>
-          </div>
-          <div class="twitter">
-            <blockquote class="twitter-tweet">
-              <p lang="en" dir="ltr">
-                I’ve been banging my head against a wall trying to figure out
-                why a telemetry subscription on a csr1000v in CML was stuck in
-                “connecting” mode. My configs looked good. Turns out all I
-                needed to run was “no netconf legacy” 🤦🏻‍♂️
-              </p>
-              &mdash; William Masci (@bill_ver3)
-              <a
-                href="https://twitter.com/bill_ver3/status/1356642429890224130?ref_src=twsrc%5Etfw"
-              >
-                February 2, 2021
-              </a>
-            </blockquote>
-          </div>
-          <div class="twitter">
-            <blockquote class="twitter-tweet">
-              <p lang="en" dir="ltr">
-                I’ve been banging my head against a wall trying to figure out
-                why a telemetry subscription on a csr1000v in CML was stuck in
-                “connecting” mode. My configs looked good. Turns out all I
-                needed to run was “no netconf legacy” 🤦🏻‍♂️
-              </p>
-              &mdash; William Masci (@bill_ver3)
-              <a
-                href="https://twitter.com/bill_ver3/status/1356642429890224130?ref_src=twsrc%5Etfw"
-              >
-                February 2, 2021
-              </a>
-            </blockquote>
-          </div>
+      <div class="social-footer-mid">
+        <pre>
+          Copyright © 2004 - 2021 Pluralsight LLC. All rights reserved     Terms of Use    Privacy Policy
+        </pre>
+      </div>
+      
+      
+      <div class="social-media-footer-right">
+            <div class="footer-social-icons">
+                <a href="#"><img src="Images/facebook_icon.png" alt="Facebook" width="20" height="20"></a>
+                <a href="#"><img src="Images/insta_icon.png" alt="Instagram" width="20" height="20"></a>
+                <a href="#"><img src="Images/twitter_icon.png" alt="Twitter" width="20" height="20"></a>
+                <a href="#"><img src="Images/linkedin_icon.png" alt="Linkedin" width="20" height="20"></a>
+                <a href="#"><img src="Images/youtube_icon.png" alt="Youtube" width="20" height="20"></a>
+            </div>
+         </div>
         </div>
+    </footer>
+    
+    
 
-        <button class="next" onclick="nextFunction()">&#10095;</button>
-      </div>
-    </div>
+</div>    
 
   </body>
   <script src="Js_files\index.js"></script>
-  <script
-    async
-    src="https://platform.twitter.com/widgets.js"
-    charset="utf-8"
-  ></script>
 </html>
