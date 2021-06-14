@@ -1,0 +1,120 @@
+body {
+    background-color: black;
+    color: white;
+}
+#container {
+    /* width: 95%; */
+    display: flex;
+    flex-direction: column;
+}
+#container > div {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 1rem;
+    height: max-content;
+}
+
+.searchDiv {
+    display: flex;
+    flex-grow: 1;
+    padding: 0.1rem;
+}
+
+.searchDiv > input {
+    flex-grow: 1;
+    font-size: 1.2rem;
+    background-color: #212121;
+    border: white;
+    padding-left: 1rem;
+}
+.searchDiv > button {
+    width: 50px;
+    background-color: #212121;
+    color: gray;
+    border: none;
+}
+.searchDiv > button:nth-child(2) {    
+    border-right: 1px solid gray;
+}
+
+.sortOptions > div:first-child {
+    padding: 0.2rem 4rem;
+    font-size: 2rem;
+    border: 1px solid white;
+}
+
+#sortOptions {
+    position: absolute;
+    /* right: 2%; */
+    width: 11%;
+    top: 20%;
+    background-color: #212121;
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+#sortOptions > div{
+     cursor: pointer;
+}
+
+.options {
+    display: none;
+}
+
+.show {
+    display: flex;
+    flex-direction: column;
+}
+
+#filter {
+    width: 20%;
+    padding: 2rem;
+}
+
+#courses {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding: 3rem;
+    
+}
+.divContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    border-bottom: 1px solid gray;
+    gap: 8px;
+}
+
+.divContainer > div:first-child > div:first-child {
+    font-size: 1.5rem;
+}
+
+.divContainer > div:first-child > div:last-child::before {
+    content: "by ";
+}
+
+.divContainer > div:last-child {
+    display: flex;
+    color: gray;
+    gap: 2rem;
+}
+.divContainer > div:last-child > div {
+    width: 15%;
+}
+
+#filter > ul {
+    list-style-type: none;
+    list-style-position: outside;
+}
+
+/* #filter > ul > li {
+    padding-left: -20px;
+} */
+
+#filter > ul {
+    padding: 0px 15px;
+}
+
+
