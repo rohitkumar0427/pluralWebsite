@@ -35,10 +35,13 @@ function showPlatform() {
   }
 }
 function showSignIn() {
-  window.open("sign-up/singIn.html", "_top");
+  window.open("/pluralWebsite/navigation/sign-up/singIn.html", "_top");
 }
 function showFor_individuals() {
-  window.open("forIndividuals/individuals.html", "_top");
+  window.open(
+    "/pluralWebsite/navigation/forIndividuals/individuals.html",
+    "_top"
+  );
 }
 
 window.onclick = function (event) {
