@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- saved from url=(0065)http://127.0.0.1:5500/pluralWebsite/platform/courses/courses.html -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,11 +9,13 @@
 <body>
     <h2>Browse</h2>
     <div id="container">
+
+
         <div>
             <div class="searchDiv">
                 <input type="text" name="search" id="searchInput" placeholder="What do you want to learn?">
                 <button onclick="resetInput();">X</button>
-                <button onclick="searchData(document.getElementById('searchInput').value);">O</button>
+                <button onclick="check();">O</button>
             </div>
             <div class="sortOptions">
                 <div onclick="showOptions('sortOptions')">Sort</div>
@@ -27,139 +28,45 @@
             </div>
         </div>
         <div>
-            <form id="filter">
+            <div id="filter">
                 <div onclick="showOptions('libraryOption')">Library</div>
                 <ul class="options" id="libraryOption">
-                    <li><input type="radio" name="library" onclick="searchData('all')">All</li>
-                    <li><input type="radio" name="library" onclick="searchData('core')">Core</li>
-                    <li><input type="radio" name="library" onclick="searchData('expanded')">Expanded</li>
+                    <li><input type="radio" name="library" id='library1' onclick="check();">All</li>
+                    <li><input type="radio" name="library" id='library2' onclick="check();">Core</li>
+                    <li><input type="radio" name="library" id='library3' onclick="check();">Expanded</li>
                 </ul>
                 
                 <div onclick="showOptions('subjectOption')">Subject</div>
                 <ul class="options" id="subjectOption">
-                    <li><input type="checkbox" name="subject">AEC</li>
-                    <li><input type="checkbox" name="subject">Architechture</li>
-                    <li><input type="checkbox" name="subject">Business professional</li>
-                    <li><input type="checkbox" name="subject">Creative professional</li>
-                    <li><input type="checkbox" name="subject">Data professional</li>
-                    <li><input type="checkbox" name="subject">IT ops</li>
-                    <li><input type="checkbox" name="subject">Manufacturing &amp; design</li>
-                    <li><input type="checkbox" name="subject">Information &amp; cyber security</li>
-                    <li><input type="checkbox" name="subject">Software developer</li>
-                    <li><input type="checkbox" name="subject">Software development</li>
-                    <li><input type="checkbox" name="subject">Web development</li>
+                    <li><input type="checkbox" name="subject" onclick="check();" id="subject1">AEC</li>
+                    <li><input type="checkbox" name="subject" onclick="check();" id="subject2">Architechture</li>
+                    <li><input type="checkbox" name="subject" onclick="check();" id="subject3">Business professional</li>
+                    <li><input type="checkbox" name="subject" onclick="check();" id="subject4">Creative professional</li>
+                    <li><input type="checkbox" name="subject" onclick="check();" id="subject5">Data professional</li>
+                    <li><input type="checkbox" name="subject" onclick="check();" id="subject6">IT ops</li>
+                    <li><input type="checkbox" name="subject" onclick="check();" id="subject7">Manufacturing &amp; design</li>
+                    <li><input type="checkbox" name="subject" onclick="check();" id="subject8">Information &amp; cyber security</li>
+                    <li><input type="checkbox" name="subject" onclick="check();" id="subject9">Software developer</li>
+                    <li><input type="checkbox" name="subject" onclick="check();" id="subject10">Software development</li>
+                    <li><input type="checkbox" name="subject" onclick="check();" id="subject11">Web development</li>
                 </ul>
                 
                 <div onclick="showOptions('skillOption')">Skill</div>
                 <ul class="options" id="skillOption">
-                        <li><input type="checkbox" name="skill" id="">Advanced </li>
-                        <li><input type="checkbox" name="skill" id="">Intermediate </li>
-                        <li><input type="checkbox" name="skill" id="">Beginner </li>
+                    <li><input type="checkbox" onclick="check();" name="skill" id="skill1">Beginner </li>
+                    <li><input type="checkbox" onclick="check();" name="skill" id="skill2">Intermediate </li>
+                    <li><input type="checkbox" onclick="check();" name="skill" id="skill3">Advanced </li>
                     </ul>
                 
-                <button>Clear all filter</button>
-            </form>
-            <div id="courses"><div class="divContainer"><div><div>ZkcT MWdPI</div><div>zJhyz</div></div><div>
-    <div>2h 12m</div>
-    <div>Beginner</div>
-    <div>4.79</div>
-    </div></div><div class="divContainer"><div><div>KUMqCiOEZG</div><div>rbkMU</div></div><div>
-    <div>3h 16m</div>
-    <div>Intermediate</div>
-    <div>4.81</div>
-    </div></div><div class="divContainer"><div><div>xKefPVRbDC</div><div>ndfZZ</div></div><div>
-    <div>4h 55m</div>
-    <div>Beginner</div>
-    <div>4.61</div>
-    </div></div><div class="divContainer"><div><div>DAjMSziAyN</div><div>zFQyI</div></div><div>
-    <div>2h 49m</div>
-    <div>Intermediate</div>
-    <div>4.59</div>
-    </div></div><div class="divContainer"><div><div>isYSHabTHi</div><div>LeJQs</div></div><div>
-    <div>4h 19m</div>
-    <div>Beginner</div>
-    <div>4.42</div>
-    </div></div><div class="divContainer"><div><div>dasdsJRFTY</div><div>KIvHy</div></div><div>
-    <div>2h 14m</div>
-    <div>Advanced</div>
-    <div>4.05</div>
-    </div></div><div class="divContainer"><div><div>ypsUlqahTW</div><div>gJawg</div></div><div>
-    <div>3h 9m</div>
-    <div>Intermediate</div>
-    <div>4.64</div>
-    </div></div><div class="divContainer"><div><div>eHzZYtcfBk</div><div>YXkpB</div></div><div>
-    <div>2h 50m</div>
-    <div>Beginner</div>
-    <div>4.93</div>
-    </div></div><div class="divContainer"><div><div>HseUtGZqtw</div><div>Rjabg</div></div><div>
-    <div>2h 27m</div>
-    <div>Advanced</div>
-    <div>4.87</div>
-    </div></div><div class="divContainer"><div><div>U CnhKkyBH</div><div>EkdHq</div></div><div>
-    <div>2h 16m</div>
-    <div>Advanced</div>
-    <div>4.12</div>
-    </div></div><div class="divContainer"><div><div>cWpbYVEaqC</div><div>NpVgU</div></div><div>
-    <div>45m</div>
-    <div>Beginner</div>
-    <div>4.45</div>
-    </div></div><div class="divContainer"><div><div>UMWCMOeLUg</div><div>FWXZM</div></div><div>
-    <div>1h 45m</div>
-    <div>Advanced</div>
-    <div>4.14</div>
-    </div></div><div class="divContainer"><div><div>jzEWBPT Qd</div><div>iQTAD</div></div><div>
-    <div>4h 20m</div>
-    <div>Beginner</div>
-    <div>4.94</div>
-    </div></div><div class="divContainer"><div><div>LVwsaHXp i</div><div>BoNkL</div></div><div>
-    <div>3h 45m</div>
-    <div>Beginner</div>
-    <div>4.85</div>
-    </div></div><div class="divContainer"><div><div>BF aEkxfOA</div><div>FCUyA</div></div><div>
-    <div>2h 10m</div>
-    <div>Advanced</div>
-    <div>4.63</div>
-    </div></div></div>
-            <button onclick="updateData(prev)"> &lt; </button>
+                <button onclick="clearAllFilter();">Clear all filter</button>
+            </div>
+            <div id="courses"></div>
+            <div>
+                <button onclick="currentShowData('prev');">Prev</button>
+                <button onclick="currentShowData('next');">Next</button>
+            </div>
         </div>
-    </div>
-<!-- Code injected by live-server -->
-<script type="text/javascript">
-	// <![CDATA[  <-- For SVG support
-	if ('WebSocket' in window) {
-		(function () {
-			function refreshCSS() {
-				var sheets = [].slice.call(document.getElementsByTagName("link"));
-				var head = document.getElementsByTagName("head")[0];
-				for (var i = 0; i < sheets.length; ++i) {
-					var elem = sheets[i];
-					var parent = elem.parentElement || head;
-					parent.removeChild(elem);
-					var rel = elem.rel;
-					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-					}
-					parent.appendChild(elem);
-				}
-			}
-			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-			var address = protocol + window.location.host + window.location.pathname + '/ws';
-			var socket = new WebSocket(address);
-			socket.onmessage = function (msg) {
-				if (msg.data == 'reload') window.location.reload();
-				else if (msg.data == 'refreshcss') refreshCSS();
-			};
-			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-				console.log('Live reload enabled.');
-				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-			}
-		})();
-	}
-	else {
-		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-	}
-	// ]]>
-</script>
+
+
 <script src="courses.js"></script>
 </body></html>

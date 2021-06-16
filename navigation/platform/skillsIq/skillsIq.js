@@ -36,14 +36,15 @@ let categorySelector = () => {
     "Conference",
   ];
   let len = randomhrs.length;
-  let x = randomhrs[Math.floor(Math.random() * (len+1))];
+  let x = randomhrs[Math.floor(Math.random() * (len + 1))];
   return x;
 };
 
 let imageSelectory = () => {
   let len = 9;
   let x = Math.floor(Math.random() * len);
-  let url = `../../Images/skill (${x}).png`;
+  let url = `/pluralWebsite/Images/skill (${x}).png`;
+  console.log(url)
   return url;
 };
 
@@ -86,7 +87,7 @@ let showData = (data) => {
     nameContainer.innerHTML = `${data[i].name}`;
     descripContainer.innerHTML = `<p><span>${data[i].course}</span> Courses 
                                 <span>${data[i].hours}</span> Hours 
-                                <img src="../../Images/iq.png"></img> Get Your Skill Iq
+                                <img src="/pluralWebsite/Images/iq.png"></img> Get Your Skill Iq
                                 </p>`;
 
     imgContainer.appendChild(img);
@@ -127,11 +128,11 @@ let showCategory = (x) => {
     "Conference",
   ];
 
-  if(x === 'all') showData(data);
+  if (x === "all") showData(data);
 
-  for(let i = 1; i < category.length; i++){
-    if(x === category[i]){
-      searchData(category[i])
+  for (let i = 1; i < category.length; i++) {
+    if (x === category[i]) {
+      searchData(category[i]);
     }
   }
 };
