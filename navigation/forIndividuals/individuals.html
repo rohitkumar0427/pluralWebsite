@@ -1,6 +1,11 @@
 <html lang="en">
 <head>
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  
+
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
@@ -9,11 +14,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="CSS_Files/nav-bar.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <title>For Individuals</title>
     <style>
         body{
             background-color: black;
-            
+            font-family: 'Roboto', sans-serif;
            
         }
         .box{
@@ -543,7 +552,7 @@ margin:30px auto;
 
 #pasecondline1{
     display: flex;
-    width: 32%;
+    width: 34%;
     margin: auto;
 }
 #paprice1{
@@ -694,6 +703,9 @@ margin-bottom: 20px;
     </style>
 </head>
 <body>
+    <div id="nav-bar">
+        <!--Brand nav logo-->
+      </div>
     <div class=" box firstFlex">
     <div class=" firstBox">
         <img src="https://www.pluralsight.com/content/dam/pluralsight2/product/v2/logos/logo-skills.png"/>
@@ -780,7 +792,7 @@ margin-bottom: 20px;
 
     <div class="box viewMore">
         <div>
-        <a>View more courses >></a>
+        <a href="../platform/courses/Courses.html">View more courses >></a>
     </div>
 
     </div>
@@ -937,10 +949,10 @@ margin-bottom: 20px;
 
           </div>
           <div class="pafithline">
-              <a>START WITH STANDARD</a>
+              <a href="../standardTrail/standardTrail.html">START WITH STANDARD</a>
           </div>
           <div class="pasixthline">
-              <div>or start a <a style="color:#ec008c!important;">FREE trail</a></div>
+              <div>or start a <a style="color:#ec008c!important;" href="../standardTrail/standardTrail.html">FREE trail</a></div>
 
           </div>
 
@@ -974,10 +986,10 @@ margin-bottom: 20px;
  
         </div>
         <div class="pafithline">
-            <a>START WITH PREMIUM</a>
+            <a href="../standardTrail/standardTrail.html">START WITH PREMIUM</a>
         </div>
         <div class="pasixthline">
-            <div>or start a <a style="color:#ec008c!important;">FREE trail</a></div>
+            <div>or start a <a style="color:#ec008c!important;" href="../standardTrail/standardTrail.html">FREE trail</a></div>
  
         </div> 
      </div>
@@ -1216,3 +1228,9 @@ function changee(){
 
 
 </script>
+
+<script>
+    $(document).ready(function () {
+      $("#nav-bar").load(" nav-bar.html");
+    });
+  </script>
