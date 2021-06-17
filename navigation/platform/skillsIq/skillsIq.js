@@ -88,22 +88,22 @@ let showData = (data) => {
     let nameContainer = document.createElement("div");
     let descripContainer = document.createElement("div");
     let img = document.createElement("img");
-    
+
     img.setAttribute("src", `${data[i].image}`);
     nameContainer.innerHTML = `${data[i].name}`;
     descripContainer.innerHTML = `<div><span>${data[i].course}</span> Courses 
     <span>${data[i].hours}</span> Hours 
     <img src="/pluralWebsite/Images/iq.png"></img> Get Your Skill Iq
     </div>`;
-    
+
     imgContainer.appendChild(img);
     divContainer.appendChild(imgContainer);
-    
+
     metaContainer.appendChild(nameContainer);
     metaContainer.appendChild(descripContainer);
     divContainer.appendChild(metaContainer);
-    
-    console.log(linkA)
+
+    console.log(linkA);
     linkA.appendChild(divContainer);
     parentDiv.appendChild(linkA);
   }
