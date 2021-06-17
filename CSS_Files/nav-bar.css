@@ -3,6 +3,7 @@
   padding: 0;
   color: white;
   text-decoration: none;
+  font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -23,13 +24,13 @@ body {
 
 /* Modifying Brand Logo */
 
-.nav-ps-logo > img {
+#nav-ps-logo > img {
   width: 180px;
   height: 40px;
   padding: 0 20px;
   cursor: pointer;
 }
-.nav-menu {
+.nav-menu { 
   display: none;
   align-items: center;
   list-style: inside;
@@ -38,7 +39,7 @@ body {
   /* position: relative; */
   background-color: black;
   z-index: 1;
-}
+} 
 
 /* Making Search Icon and mobile menu option */
 .nav-icon {
@@ -98,7 +99,7 @@ body {
 
 #nav-menu li {
   padding: 25px 40px;
-  font-size: 1.2rem;
+  font-size: 1rem; 
   cursor: pointer;
   border-bottom: 1px solid gray;
 }
@@ -116,7 +117,7 @@ body {
   border-radius: 5px;
   border: 1px solid white;
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-align: center;
 }
 
@@ -124,7 +125,7 @@ body {
   /* display: none; */
   width: fit-content;
   color: white;
-  font-size: 1.2rem;
+  /* font-size: 1.2rem; */
   background-color: black;
   padding: 3rem;
   position: absolute;
@@ -171,7 +172,7 @@ body {
   max-width: 1024px;
   min-width: 920px;
   color: white;
-  font-size: 1.2rem;
+  font-size: 1rem;
   background-color: black;
   padding: 3rem;
   position: absolute;
@@ -198,18 +199,19 @@ body {
 }
 #subMenu-waysToUpskill > div {
   display: flex;
-  gap: 1.5rem;
+  gap: 1.2rem;
   align-items: center;
-  margin-bottom: 1.4rem;
+  margin-bottom: 1.2rem;
 }
 #subMenu-waysToUpskill > div > div {
-  font-size: 1.2rem;
+  font-size: 1rem;
   width: max-content;
-  font-weight: 900;
-  line-height: 0;
+  /* font-weight: 900; */
+  /* line-height: 0;   */
 }
 #rightContainer {
   display: flex;
+  flex-grow: 1;
   /* margin-left: -3rem; */
 }
 #rightContainer > div {
@@ -220,9 +222,9 @@ body {
 #subMenu-skillsFor {
   display: flex;
   flex-direction: column;
-  margin-bottom: 3rem;
-  font-size: 1.1rem;
-  padding-bottom: 20%;
+  /* margin-bottom: 3rem; */
+  font-size: 1rem;
+  padding-bottom: 23%;
   border-bottom: 1px solid gray;
 }
 #subMenu-skillsFor > div:first-child {
@@ -235,9 +237,9 @@ body {
 #subMenu-skillsFor + div {
   /* background-color: green; */
   width: max-content;
-  font-size: 1.1rem;
-  margin-top: -80%;
-  padding: 0 20px 0 0;
+  font-size: 1rem;
+  margin-top: 10%;
+  padding: 0 10px 0 0;
   border-right: 2px solid gray;
 }
 #subMenu-topTrending {
@@ -248,15 +250,16 @@ body {
 }
 .subMenu-top-trending-paths {
   display: flex;
-  gap: 1rem;
+  gap: 0.3rem;
   flex-wrap: wrap;
   border-bottom: 1px solid gray;
-  padding-bottom: 62px;
+  padding-bottom: 76px;
 }
 .subMenu-top-trending-paths > div {
   display: flex;
-  width: 48%;
+  width: 49%;
   height: 70px;
+  font-size: 0.5rem;
   flex-direction: row;
   align-items: center;
   flex-wrap: nowrap;
@@ -265,19 +268,19 @@ body {
   /* padding-left: 10p; */
 }
 #subMenu-topTrending + div {
-  font-size: 1.1rem;
-  padding-left: 5px;
+  font-size: 1rem;
+  padding-left: 20px;
 }
 .title {
-  font-size: 15px;
+  font-size: 0.8rem;
 }
 .title + div {
-  font-size: 14px;
+  font-size: 10px;
   color: gray;
 }
 .subMenu-top-trending-paths span {
   font-weight: 900;
-  font-size: 18px;
+  font-size: 12px;
   color: white;
 }
 .title + div img {
@@ -725,7 +728,7 @@ button:active {
     padding-left: 10px;
     width: 3rem;
     flex-wrap: nowrap;
-    font-size: 1.2rem;
+    /* font-size: 1rem; */
     background-color: #212121;
   }
   #nav-menu-title > li:last-child {

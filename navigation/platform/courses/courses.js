@@ -1,4 +1,18 @@
-let coursesData = [];
+const skillset = ["Beginner", "Intermediate", "Advanced"];
+const library = ["Core", "Expanded"];
+const subject = [
+  "AEC",
+  "Architecture & Construction",
+  "Business Professional",
+  "Creative Professional",
+  "Data Professional",
+  "IT ops",
+  "Manufacture & design",
+  "Information & Cyber Security",
+  "Software Developer",
+  "Software Development",
+  "Web Development",
+];
 
 function randomName(randomChars, res, len) {
   for (let j = 0; j < len; j++) {
@@ -25,55 +39,52 @@ let randomTime = () => {
   return res;
 };
 
-for (let i = 0; i < 150; i++) {
-  let randomChars = "QWERT YUIOPASDFGHJKLZXCVBNMqwertyuiopasdfghjklzxcvbnm";
-  let skillset = ["Beginner", "Intermediate", "Advanced"];
-  let library = ["Core", "Expanded"];
-  let subject = [
-    "AEC",
-    "Architecture & Construction",
-    "Business Professional",
-    "Creative Professional",
-    "Data Professional",
-    "IT ops",
-    "Manufacture & design",
-    "Information & Cyber Security",
-    "Software Developer",
-    "Software Development",
-    "Web Development",
-  ];
-
-  coursesData[i] = {
-    name: randomName(randomChars, "", 10),
-    author: randomName(randomChars, "", 5),
+let coursesData = [
+  {
+    name: "Javascript",
+    author: "Daniel",
     time: randomTime(),
-    skillLevel: randomSkill(skillset),
-    library: randomSkill(library),
-    subject: randomSkill(subject),
+    skillLevel: "Beginner",
+    library: "Core",
+    subject: "IT ops",
     rating: Math.floor((Math.random() * 1 + 4) * 100) / 100,
     addedTime: new Date(
       +new Date() - Math.floor(Math.random() * 10000000000)
     ).toLocaleDateString("en-US"),
-  };
-}
+  },
+  {
+    name: "AAA",
+    author: "bbb",
+    time: randomTime(),
+    skillLevel: "Advanced",
+    library: "Expanded",
+    subject: "AEC",
+    rating: Math.floor((Math.random() * 1 + 4) * 100) / 100,
+    addedTime: new Date(
+      +new Date() - Math.floor(Math.random() * 10000000000)
+    ).toLocaleDateString("en-US"),
+  },
+];
 
+// Generating the courses Data.
 if (localStorage.getItem("coursesData") === null) {
+  for (let i = 2; i < 150; i++) {
+    let randomChars = "QWERT YUIOPASDFGHJKLZXCVBNMqwertyuiopasdfghjklzxcvbnm";
+    coursesData[i] = {
+      name: randomName(randomChars, "", 10),
+      author: randomName(randomChars, "", 5),
+      time: randomTime(),
+      skillLevel: randomSkill(skillset),
+      library: randomSkill(library),
+      subject: randomSkill(subject),
+      rating: Math.floor((Math.random() * 1 + 4) * 100) / 100,
+      addedTime: new Date(
+        +new Date() - Math.floor(Math.random() * 10000000000)
+      ).toLocaleDateString("en-US"),
+    };
+  }
   localStorage.setItem("coursesData", JSON.stringify(coursesData));
 }
-
-document
-  .querySelector("#searchInput")
-  .addEventListener("keypress", function (e) {
-    if (e.keyCode === 13) {
-      searchData(document.getElementById("searchInput").value);
-    }
-  });
-
-let searchCourses = (data, x) => {
-  let res = [];
-
-  for (let i = 0; i < data.length; i++) {}
-};
 
 let resetInput = () => {
   document.getElementById("searchInput").value = "";
@@ -104,33 +115,223 @@ let showData = (data, len) => {
 
     let descripContainer = document.createElement("div");
     descripContainer.innerHTML = `
-    <div>${data[i].time}</div>
-    <div>${data[i].skillLevel}</div>
-    <div>${data[i].rating}</div>
-    `;
+      <div>${data[i].time}</div>
+      <div>${data[i].skillLevel}</div>
+      <div>${data[i].rating}</div>
+      `;
 
     divContainer.appendChild(nameContainer);
     divContainer.appendChild(descripContainer);
-    console.log(divContainer);
-    console.log(parentDiv);
 
     parentDiv.appendChild(divContainer);
+
+    let dotsDiv = document.getElementById("dots");
+    // count1++
+    let count = data.length/15;
+    
+    dotsDiv.innerHTML=`${len}`;
+    
+  }
+};
+let count1 = 0;
+
+if (localStorage.getItem("allCourseData") === null) {
+  var allCourseData = [];
+  allCourseData = JSON.parse(localStorage.getItem("coursesData"));
+}
+if (localStorage.getItem("currentSearchedData") === null) {
+  var currentSearchedData = [];
+}
+
+let searchCourses = (parameter, index) => {
+  let res = [];
+  if (parameter === "library") {
+    for (let i = 0; i < currentSearchedData.length; i++) {
+      if (currentSearchedData[i].library === library[index]) {
+        res.push(currentSearchedData[i]);
+      }
+    }
+  } else if (parameter === "subject") {
+    for (let i = 0; i < currentSearchedData.length; i++) {
+      for (let j = 0; j < index.length; j++) {
+        if (currentSearchedData[i].subject === subject[index[j]]) {
+          res.push(currentSearchedData[i]);
+        }
+      }
+    }
+  } else if (parameter === "skillset") {
+    for (let i = 0; i < currentSearchedData.length; i++) {
+      for (let j = 0; j < index.length; j++) {
+        if (currentSearchedData[i].skillLevel === skillset[index[j]]) {
+          res.push(currentSearchedData[i]);
+        }
+      }
+    }
+  }
+  return res;
+};
+
+let checkLibrary = () => {
+  if (document.getElementById("library1").checked === true)
+    return currentSearchedData;
+  for (let i = 1; i <= library.length; i++) {
+    let x = document.getElementById(`library${i + 1}`);
+    if (x.checked === true) {
+      return searchCourses("library", i - 1);
+    }
+  }
+  return currentSearchedData;
+};
+
+let checkSubject = () => {
+  let searchParameter = [];
+  for (let i = 1; i <= subject.length; i++) {
+    let x = document.getElementById(`subject${i}`);
+    if (x.checked === true) searchParameter.push(i - 1);
+  }
+  if (searchParameter.length !== 0) {
+    return searchCourses("subject", searchParameter);
+  } else return currentSearchedData;
+};
+
+let checkSkillLevel = () => {
+  let searchParameter = [];
+  for (let i = 1; i <= skillset.length; i++) {
+    let x = document.getElementById(`skill${i}`);
+    if (x.checked === true) searchParameter.push(i - 1);
+  }
+  if (searchParameter.length !== 0) {
+    return searchCourses("skillset", searchParameter);
+  } else return currentSearchedData;
+};
+
+let searchData = (val) => {
+  let res = [];
+  if (val === "") return currentSearchedData;
+  for (let i = 0; i < currentSearchedData.length; i++) {
+    if (
+      currentSearchedData[i].name === val ||
+      currentSearchedData[i].author === val
+    ) {
+      res.push(currentSearchedData[i]);
+    }
+  }
+  return res;
+};
+
+// let resetInput = () => {
+//   let val = document.getElementById("searchInput").value;
+//   searchData(val);
+// };
+
+let temp = 0;
+
+currentSearchedData = JSON.parse(localStorage.getItem("coursesData"));
+
+showData(currentSearchedData, temp);
+
+let check = () => {
+  temp = 0;
+  currentSearchedData = JSON.parse(localStorage.getItem("coursesData"));
+  let val = document.getElementById("searchInput").value;
+
+  currentSearchedData = checkLibrary();
+  currentSearchedData = checkSubject();
+  currentSearchedData = checkSkillLevel();
+  currentSearchedData = searchData(val);
+
+  showData(currentSearchedData, temp);
+};
+
+document
+  .querySelector("#searchInput")
+  .addEventListener("keypress", function (e) {
+    if (e.keyCode === 13) {
+      check();
+    }
+  });
+
+let currentShowData = (x) => {
+  if (x === "prev") {
+    if (temp === 0);
+    else {
+      temp--;
+      showData(currentSearchedData, temp);
+    }
+  }
+  if (x === "next") {
+    if (temp > currentSearchedData.length / 15 - 2);
+    else {
+      temp++;
+      showData(currentSearchedData, temp);
+    }
   }
 };
 
-let allCourseData = JSON.parse(localStorage.getItem("coursesData"));
-
-let currentSearchedData = [];
-
-if (localStorage.getItem("currentSearchedData") === null) {
-  currentSearchedData = JSON.parse(localStorage.getItem("coursesData"));
-}
-
-showData(allCourseData, 0);
-
-let searchData = (parameter) => {
-  //   console.log(parameter);
-  searchCourses(currentSearchedData, parameter);
+let clearAllFilter = () => {
+  for (let i = 1; i <= library.length; i++) {
+    let x = document.getElementById(`library${i}`);
+    if (x.checked === true) {
+      x.checked = false;
+    }
+  }
+  for (let i = 1; i <= subject.length; i++) {
+    let x = document.getElementById(`subject${i}`);
+    if (x.checked === true) x.checked = false;
+  }
+  for (let i = 1; i <= skillset.length; i++) {
+    let x = document.getElementById(`skill${i}`);
+    if (x.checked === true) x.checked = false;
+  }
+  temp = 0;
+  currentSearchedData = allCourseData;
+  showData(currentSearchedData, temp);
 };
 
-let sortBy = (x) => {};
+let sortBy = (x) => {
+  temp = 0;
+  if (x === "ratingHigh") {
+    currentSearchedData.sort((a, b) => {
+      return b.rating - a.rating;
+    });
+  } else if (x === "newest") {
+    currentSearchedData.sort((a, b) => {
+      return a.addedTime.localeCompare(b.addedTime);
+    });
+  } else if (x === "ascending") {
+    currentSearchedData.sort((a, b) => {
+      return a.name.localeCompare(b.name);
+    });
+  } else if (x === "descending") {
+    currentSearchedData.sort((a, b) => {
+      return -a.name.localeCompare(b.name);
+    });
+  }
+  showData(currentSearchedData, temp);
+};
+
+let classToggle = (x) => {
+  if (x === "newest") {
+    let tag = document.getElementById("newest").classList;
+    if (!tag.contains("showTab")) {
+      console.log("hi");
+      tag.add("showTab");
+      document.getElementById("trend").classList.remove("showTab");
+      let li = document.getElementById("listTechCont1");
+      li.setAttribute("style", "border-bottom: 6px solid magenta");
+      li = document.getElementById("listTechCont2");
+      li.removeAttribute("style", "border-bottom");
+    }
+  }
+  if (x === "trend") {
+    let tag = document.getElementById("trend").classList;
+    if (!tag.contains("showTab")) {
+      tag.add("showTab");
+      document.getElementById("newest").classList.remove("showTab");
+      let li = document.getElementById('listTechCont2');
+      li.setAttribute("style", 'border-bottom: 6px solid magenta')
+      li = document.getElementById('listTechCont1');
+      li.setAttribute("style", 'border-bottom: 6px solid black')
+    }
+  }
+};
