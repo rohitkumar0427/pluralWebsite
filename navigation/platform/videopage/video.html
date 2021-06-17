@@ -1,0 +1,256 @@
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getting started with programing</title>
+    <style>
+        body{
+            background: #222;
+            padding: 0%;
+            margin: 0%;
+            font-family: 'Roboto', sans-serif;
+        }
+        .outerdiv{
+            display: flex;
+
+        }
+        .videos{
+            width: 70%;
+
+        }
+        .content{
+            background-color: rgba(30, 36, 41, 0.9);
+        }
+        .contenthead{
+            width: 80%;
+            margin-left: 10px;
+            
+        }
+        .contentslect{
+            display: flex;
+            margin-left: 10px;
+            margin-bottom: 5px;
+           
+
+
+        }
+        .table{
+            width: 35%;
+           margin-right: 10px;
+           cursor: pointer;
+           font-size: 30px;
+        }
+        .notes{
+            width: 12%;
+            cursor: pointer;
+            font-size: 30px;
+        }
+        #iframe1{
+           
+            height: 750px;
+            overflow-y: scroll;
+        }
+        #info{
+          display: flex;
+          flex-direction: column;
+          cursor: pointer;
+        }
+        .infohead{
+            display: flex;
+          flex-direction: column;
+          border-bottom: 1px solid #ffffffb3;
+        }
+        .headinfo{
+            display: flex;
+            padding: 2%;
+            
+        }
+        .num{
+            width: 25px;
+            margin-right: 25px;
+            height: 25px;
+            border-radius: 50%;
+            border: 2px solid gray;
+            padding-top: 5px;
+            text-align: center;
+            color: #ffffff;
+            margin-top: 5px;
+        }
+        .hp{
+            margin-top: -20px;
+        }
+        .hp > p{
+            margin-top: -20px;
+        }
+        .csss{
+            display: flex;
+            color: #ffffff;
+            padding: 1.5%;
+        }
+        .pl{
+           width: 5%;
+            margin-right: 10px;
+           
+        }
+        .i{
+            width: 70%;
+            margin-right: 10px;
+       
+        }
+        .imag{
+            position: absolute;
+            top: 0px;
+        }
+        .imag > img{
+          width: 20%;
+        }
+        .ntdata{
+            padding: 2%;
+            
+            font-size: 20px;
+            font-weight: 700;
+            border-bottom:3px solid gray;
+        }
+      a{
+          text-decoration: none;
+          color: #ffffff;
+      }
+
+    </style>
+</head>
+<body>
+    <div class="outerdiv">
+        <div class="imag"><img src="https://www.pluralsight.com/buy/static/assets/ps_logo.png"/></div>
+        <div id="videos">
+            <video width="1500" height="930" controls>
+                <source src="../../../videos/javaintro.mp4" type="video/mp4">
+                
+                
+                </video>
+        </div>
+        <div class="content">
+       <div class="contenthead">
+        <h2 style="font-size: 22px;font-weight: 400;color: #fffffff2;">Getting Started with Programming in Java</h2>
+        <h4 style="font-size: 16px;font-weight: 400;color: #fffffff2;">By Jim Wilson</h4>
+    </div>
+    <div class="contentslect">
+        <div style="font-size: 16px; font-weight: 800;color: #fffffff2;border-bottom: 3px solid #0074ab;" class="table" onclick="tablec()" id="t">Table of Content</div>
+        <div style="font-size: 16px; font-weight: 800;color: #fffffff2;" class="notes" onclick="note()" id="n">Notes</div>
+
+    </div>
+    <div id="iframe1">
+        <div id="info">
+            <div class="infohead" onclick="ad1()" >
+                <div class="headinfo" id="mov">
+                    <div class="num">1</div>
+                    <div class="hp">
+                        <h4 style="font-size: 16px;font-weight: 600;color: #fffffff2;">Creating your first java App</h4>
+                        <p style="font-size: 12px;color: #ffffffb3;">1m 16s</p>
+                    </div>
+        
+                </div>
+                <div id="addinfo1">
+               
+                </div>
+               </div>
+                 <div class="infohead" onclick="ad2()" >
+                     <div class="headinfo" id="mov1">
+                         <div class="num">2</div>
+                         <div class="hp">
+                             <h4 style="font-size: 16px;font-weight: 600;color: #fffffff2;">Variables, Data Types, and Math Operators</h4>
+                             <p style="font-size: 12px;color: #ffffffb3;">39m 21s</p>
+                         </div>
+        
+                     </div>
+                     <div id="addinfo2">
+                    
+                     </div>
+                    </div>
+                    <div class="infohead" onclick="ad3()" >
+                        <div class="headinfo" id="mov3">
+                            <div class="num">3</div>
+                            <div class="hp">
+                                <h4 style="font-size: 16px;font-weight: 600;color: #fffffff2;">Conditional Logic</h4>
+                                <p style="font-size: 12px;color: #ffffffb3;">3m 57s</p>
+                            </div>
+           
+                        </div>
+                        <div id="addinfo3">
+                       
+                        </div>
+                       </div>
+        
+                       <div class="infohead" onclick="ad4()" >
+                        <div class="headinfo" id="mov4">
+                            <div class="num">4</div>
+                            <div class="hp">
+                                <h4 style="font-size: 16px;font-weight: 600;color: #fffffff2;">Looping and Arrays</h4>
+                                <p style="font-size: 12px;color: #ffffffb3;">30m 32s</p>
+                            </div>
+           
+                        </div>
+                        <div id="addinfo4">
+                       
+                        </div>
+                       </div>
+                
+                       <div class="infohead" onclick="ad5()">
+                        <div class="headinfo" id="mov5">
+                            <div class="num">5</div>
+                            <div class="hp">
+                                <h4 style="font-size: 16px;font-weight: 600;color: #fffffff2;">Understanding Methods</h4>
+                                <p style="font-size: 12px;color: #ffffffb3;">36m 0s</p>
+                            </div>
+           
+                        </div>
+                        <div id="addinfo5">
+                       
+                        </div>
+                       </div>
+             
+                       <div class="infohead" onclick="ad6()">
+                        <div class="headinfo" id="mov6">
+                            <div class="num">6</div>
+                            <div class="hp">
+                                <h4 style="font-size: 16px;font-weight: 600;color: #fffffff2;">Working with Strings</h4>
+                                <p style="font-size: 12px;color: #ffffffb3;">39m 38s</p>
+                            </div>
+           
+                        </div>
+                        <div id="addinfo6">
+                       
+                        </div>
+                       </div>
+        
+                       <div class="infohead" onclick="ad7()">
+                        <div class="headinfo" id="mov7">
+                            <div class="num">7</div>
+                            <div class="hp">
+                                <h4 style="font-size: 16px;font-weight: 600;color: #fffffff2;">String Formatting</h4>
+                                <p style="font-size: 12px;color: #ffffffb3;">29m 38s</p>
+                            </div>
+           
+                        </div>
+                        <div id="addinfo7">
+                       
+                        </div>
+                       </div>
+        
+           </div>
+           
+    </div>
+
+    </div>
+    </div>
+
+    
+</body>
+</html>
+<script src="video.js">
+
+</script>
