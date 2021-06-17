@@ -85,10 +85,10 @@ let showData = (data) => {
 
     img.setAttribute("src", `${data[i].image}`);
     nameContainer.innerHTML = `${data[i].name}`;
-    descripContainer.innerHTML = `<p><span>${data[i].course}</span> Courses 
+    descripContainer.innerHTML = `<div><span>${data[i].course}</span> Courses 
                                 <span>${data[i].hours}</span> Hours 
                                 <img src="/pluralWebsite/Images/iq.png"></img> Get Your Skill Iq
-                                </p>`;
+                                </div>`;
 
     imgContainer.appendChild(img);
     divContainer.appendChild(imgContainer);

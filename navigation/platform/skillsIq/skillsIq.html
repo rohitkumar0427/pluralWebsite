@@ -5,9 +5,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="/pluralWebsite/CSS_Files/nav-bar.css" />
+    <link rel="stylesheet" href="/pluralWebsite/CSS_Files/skillStle.css" />
     <link rel="stylesheet" href="skillsIq.css" />
+    <link rel="stylesheet" href="/pluralWebsite/CSS_Files/nav-bar.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- <link rel="stylesheet" href="/pluralsight/CSS_Files/card.css"/> -->
   </head>
   <body>
+     <div id="nav-bar">
+      <!--Brand nav logo-->
+    </div>
+        <div id="container">
+      <div id="container1" style="background-image: url('/pluralWebsite/Images/background_image_Header.png');">
+        <a href="pluralsight.com/offer/2021/q2-33-off-3-day">  <img src="/pluralWebsite/Images/headerImg.png" style="margin-left: 100px;"/>
+          </a>
+      </div>
+      
+      <div id="container2" style="background-image: url('/pluralWebsite/Images/container1_background.jpg');background-size:100% 100%;background-repeat: no-repeat;">
+          <img src="/pluralWebsite/Images/skilliqImage.png"/>
+          <h1>Don't guess where
+              <br>your skills stand</h1>
+              <p>This is your future. Define your skills by the only metric that matches the pace<br> change. Take a free assessment to get your Skill IQ today.
+              </p>
+      <div style="clear: both;"></div>
+      <div >
+          <div style="float:left;margin-left: 2%;"><button>GET YOUR SKILL IQ</button></div>
+          <a href="https://youtu.be/oVpmevtmGoE" target="_self">
+          <div style="float:left;margin-left: 50px;margin-top: 50px;"><img src="/pluralWebsite/Images/playButton.png" height="40px" width="40px"></div>
+          <div style="float:left;margin-left: 20px;margin-top: 60px;"><h3>This is not a test</h3></div>
+          <div style="float: left;margin-top: 63px;margin-left: 10px;"><img src="/pluralWebsite/Images/nextToggle.png" height="10px" width="10px"></div>
+        </a>
+        </div>
+        <div style="clear: both;"></div>
+        <div id="container3">
+         <div>
+           <h2>Do you know what you don’t know?</h1>
+          <p>Identify your knowledge gaps and strengths with our skill assessments. Your results will tell you where to start within a learning path, so you can develop the skills you need most and not waste time on what you already know. </p>
+         </div>
+         <div>
+         <video autoplay style="margin-top: 10%;" height="98%" width="130%">
+          <source src="Videos/skills1.mp4" type="video/mp4">
+
+         </video>
+         </div>
+
+        </div>
+  <div style="clear:both;"></div>
+  <!-- <div id="container4"></div> -->
+  
+ <h4>Take a free assessment to get your Skill IQ today</h4>
+
+<div class="topMargin"> 
     <ul id="showSearchButtons">
       <li onclick="showCategory('all');" class="searchButtons">All</li>
       <li onclick="showCategory('Development')" class="searchButtons">Development</li>
@@ -21,4 +72,11 @@
     </div>      
   </body>
   <script src="skillsIq.js"></script>
+  <script>
+    $(document).ready(function () {
+      $("#nav-bar").load("/pluralWebsite/navigation/nav-bar.html");
+    });
+  </script>
+  <script src="/pluralWebsite/Js_files/index.js"></script>
+
 </html>

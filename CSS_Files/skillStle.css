@@ -70,16 +70,17 @@
 
     }
     #container4{
-        height:1090px;
-         margin-top: 10%; 
-        background-color: cadetblue;
+        /* height:1090px; */
+         margin-top: 2%; 
+        /* background-color: cadetblue; */
          
       }
+
+
     #container4 > div{
         height: 20%;
         margin: auto;
-        text-align: center;
-        
+        text-align: center; 
 
 
     }
@@ -101,63 +102,63 @@ display: inline-block;
 margin: 15px;
 
 }    
-li a {
+/* li a {
     color: #999;
     font-size: 25px;
-}
+} */
 
-li a:hover {
+/* li a:hover {
     color:white;
     font-size: 25px ;
     border-bottom: 5px solid rgb(236,0,140);
-}
+} */
 
-#container4 hr{
+/* #container4 hr{
     margin-left: 20%;
     margin-right: 10%;
 
 
-}
-.topMargin{
+} */
+/* .topMargin{
     margin-top: -5%;
-}
- .card{
+} */
+ /* .card{
    background-color: rgb(34,34,34);
    height: 15%;
    width:28%;
    margin: 1%;
    padding: 2%;
    float: left;
-}
-.leftmargin
+} */
+/* .leftmargin
 {
     margin-left: 20%;
-}
-.card .leftmargin>div{
+} */
+/* .card .leftmargin>div{
     float:left;
-    width: 20%;
+    width: 20%; */
 
-}
-.card .leftmargin>div >div{
+/* } */
+/* .card .leftmargin>div >div{
     float:left;
-    width: 30%;
+    width: 30%; */
 
-}
-#container5{
+/* } */
+/* #container5{
     height: 15%;
     background-color: black;
     
-}
-#container5 > div{
+} */
+/* #container5 > div{
+    width: 50%;
+    float:left; */
+/* } */
+/* #container5 > div >div{
     width: 50%;
     float:left;
-}
-#container5 > div >div{
-    width: 50%;
-    float:left;
-}
+} */
 
-#container5 > div > div > button{
+/* #container5 > div > div > button{
     margin-top: 50px;
     margin-left: 0.2%;
     padding-top: 10px;
@@ -173,4 +174,4 @@ li a:hover {
    font-weight: bold;
 
 
-}
+} */
