@@ -2,6 +2,9 @@
 <head>
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="/pluralWebsite/Js_files/index.js"></script>
+    <link rel="stylesheet" href="/pluralWebsite/CSS_Files/nav-bar.css" />
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,6 +18,10 @@
             font-family: 'Roboto', sans-serif;
             
         }
+        /* #nav-bar {
+    /* position: relative; */
+    /* top: 0; */
+/* } */
         .firstBox{
             width: 100%;
             background-image:url("https://www.pluralsight.com/content/pluralsight/en/pricing/free-trial/jcr:content/main/generic_block/image-res.img.c8abfda9-07fb-44f0-bdfd-6596e73f3f62.jpg");
@@ -558,6 +565,9 @@ tr{
     </style>
 </head>
 <body>
+    <div id="nav-bar">
+        <!--Brand nav logo-->
+      </div>
     <div class="firstBox">
         <div class="firstboxspace">.</div>
         <div class="firstBoxText">
@@ -1300,3 +1310,9 @@ function showSlides(n) {
  
 </script>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<script>
+    $(document).ready(function () {
+      $("#nav-bar").load("/pluralWebsite/navigation/nav-bar.html");
+    });
+  </script>

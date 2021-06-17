@@ -91,8 +91,24 @@ let resetInput = () => {
 };
 
 let showOptions = (x) => {
-  let sortOption = document.getElementById(x);
-  sortOption.classList.toggle("show");
+  console.log(x);
+  let sortOption = document.getElementById(x).classList;
+  console.log(sortOption);
+  sortOption.toggle("showBox");
+};
+
+let createDots = (data) => {
+  let dotsDiv = document.getElementById("dots");
+  dotsDiv.innerHTML = "";
+  // count1++
+  let count = data.length / 15;
+
+  for (let i = 0; i < count; i++) {
+    let dots = document.createElement("div");
+    dots.setAttribute("class", "dot");
+    dots.setAttribute("id", `dot${i}`);
+    dotsDiv.appendChild(dots);
+  }
 };
 
 let showData = (data, len) => {
@@ -100,8 +116,12 @@ let showData = (data, len) => {
   parentDiv.innerHTML = "";
 
   for (let i = len * 15; i < (len + 1) * 15; i++) {
-    let divContainer = document.createElement("div");
+    let divContainer = document.createElement("a");
     divContainer.setAttribute("class", "divContainer");
+    divContainer.setAttribute(
+      "href",
+      "/pluralWebsite/navigation/platform/videopage/video.html"
+    );
 
     let nameContainer = document.createElement("div");
     let courseName = document.createElement("div");
@@ -124,16 +144,18 @@ let showData = (data, len) => {
     divContainer.appendChild(descripContainer);
 
     parentDiv.appendChild(divContainer);
-
-    let dotsDiv = document.getElementById("dots");
-    // count1++
-    let count = data.length/15;
-    
-    dotsDiv.innerHTML=`${len}`;
-    
   }
+
+  let dots = document.getElementsByClassName("dot");
+
+  for (let i = 0; i < dots.length; i++) {
+    let temp = document.getElementById(`dot${i}`);
+    temp.removeAttribute("style", "background-color");
+  }
+
+  let currentDot = document.getElementById(`dot${len}`);
+  currentDot.setAttribute("style", "background-color: magenta");
 };
-let count1 = 0;
 
 if (localStorage.getItem("allCourseData") === null) {
   var allCourseData = [];
@@ -219,15 +241,11 @@ let searchData = (val) => {
   return res;
 };
 
-// let resetInput = () => {
-//   let val = document.getElementById("searchInput").value;
-//   searchData(val);
-// };
-
 let temp = 0;
 
 currentSearchedData = JSON.parse(localStorage.getItem("coursesData"));
 
+createDots(currentSearchedData);
 showData(currentSearchedData, temp);
 
 let check = () => {
@@ -240,6 +258,7 @@ let check = () => {
   currentSearchedData = checkSkillLevel();
   currentSearchedData = searchData(val);
 
+  createDots(currentSearchedData);
   showData(currentSearchedData, temp);
 };
 
@@ -264,6 +283,7 @@ let currentShowData = (x) => {
     else {
       temp++;
       showData(currentSearchedData, temp);
+      // createDots(currentSearchedData)
     }
   }
 };
@@ -285,6 +305,7 @@ let clearAllFilter = () => {
   }
   temp = 0;
   currentSearchedData = allCourseData;
+  createDots(currentSearchedData);
   showData(currentSearchedData, temp);
 };
 
@@ -307,6 +328,7 @@ let sortBy = (x) => {
       return -a.name.localeCompare(b.name);
     });
   }
+  createDots(currentSearchedData);
   showData(currentSearchedData, temp);
 };
 
@@ -314,7 +336,6 @@ let classToggle = (x) => {
   if (x === "newest") {
     let tag = document.getElementById("newest").classList;
     if (!tag.contains("showTab")) {
-      console.log("hi");
       tag.add("showTab");
       document.getElementById("trend").classList.remove("showTab");
       let li = document.getElementById("listTechCont1");
@@ -328,10 +349,10 @@ let classToggle = (x) => {
     if (!tag.contains("showTab")) {
       tag.add("showTab");
       document.getElementById("newest").classList.remove("showTab");
-      let li = document.getElementById('listTechCont2');
-      li.setAttribute("style", 'border-bottom: 6px solid magenta')
-      li = document.getElementById('listTechCont1');
-      li.setAttribute("style", 'border-bottom: 6px solid black')
+      let li = document.getElementById("listTechCont2");
+      li.setAttribute("style", "border-bottom: 6px solid magenta");
+      li = document.getElementById("listTechCont1");
+      li.setAttribute("style", "border-bottom: 6px solid black");
     }
   }
 };
