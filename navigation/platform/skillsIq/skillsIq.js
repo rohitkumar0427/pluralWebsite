@@ -43,7 +43,7 @@ let categorySelector = () => {
 let imageSelectory = () => {
   let len = 9;
   let x = Math.floor(Math.random() * len);
-  let url = `../../../Images/skill (${x}).png`;
+  let url = `skill (${x}).png`;
   console.log(url);
   return url;
 };
