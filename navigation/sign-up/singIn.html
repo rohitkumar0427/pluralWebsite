@@ -1,5 +1,9 @@
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +12,7 @@
         body{
             padding: 0px;
             margin: 0px;
+            font-family: 'Roboto', sans-serif;
         }
         .leftBox{
             width: 40%;
@@ -158,7 +163,7 @@
          
        }
        .invaltext{
-           margin-left: 800px;
+           margin-left: 770px;
            margin-right: 800px;
            padding: 0.5%;
        }
@@ -253,12 +258,15 @@ document.getElementById("signw").addEventListener("mouseleave",function(){
 
 let userin=[
     {
-        email:"suresh@gamil.com",
+        email:"suresh@gmail.com",
         password:"suresh123"
     },
     {
         email:"dhruva@gmail.com",
         password:"dhruva123"
+    },
+    {email:"rohit@gmail.com",
+    password:"rohit123"
     }
 ]
 
@@ -274,10 +282,13 @@ let em=document.getElementById("email").value
 let pass=document.getElementById("password").value
 
 for(let i=0;i<arr.length;i++){
-    
+   console.log(arr[i].email)
     if(arr[i].email==em && arr[i].password==pass){
+     
         k++;
+        
         break;
+        
     }
 }
 
@@ -294,7 +305,7 @@ d=document.getElementById("closee")
 d.addEventListener("click",close)
 }
 else{
-    alert("loged in")
+    window.location.href="../../index.html"
 }
 
 }

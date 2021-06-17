@@ -1,0 +1,441 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Standard trail</title>
+    <style>
+        body{
+            background: rgb(24, 24, 24);
+            padding: 0%;
+            margin: 0%;
+        }
+        a{
+            font-size: 11px;
+            color: #2ea0d4;
+            font-weight: 900;
+        }
+        h2,h3{
+            font-size: 20px;
+            color: #ffffffe6;
+            font-weight: 900;
+        }
+        h6{
+            font-size: 12px;
+            color: #ffffffa6;
+        }
+        .outerDiv{
+            margin-top: 100px;
+             width: 60%;
+             display: flex;
+             margin-left: 280;
+           
+             
+            
+        }
+        .leftDiv{
+            width: 60%;
+            background: rgb(34, 34, 34);
+            padding: 2%;
+        }
+        .leftDivleft{
+            width: 50%;
+        }
+        .flex{
+            width: 100%;
+           display: flex;
+         
+        }
+        .flexl1{
+            width: 100%;
+           display: flex;
+           border-bottom:1px solid rgb(54, 54, 54);
+           
+        }
+        .ball{
+            width: 27px;
+            height: 24px;
+           border-radius: 50%;
+            background: rgb(54, 54, 54);
+            color: rgba(255, 255, 255, 0.9);
+            text-align: center;
+            margin-top: 11px;
+            padding-top: 2%;
+            margin-right: 5px;
+        }
+        input{
+            width: 100%;
+            padding: 2%;
+            background-color:  rgb(59, 59, 59);
+        }
+        select{
+            width: 100%;
+            padding: 2%;
+            background-color:  rgb(59, 59, 59);
+            color: #CCCCCC;
+        }
+        .cccol{
+            color: #CCCCCC;
+            font-size: 14px;
+        }
+        .info{
+            margin-bottom: 15px;
+        }
+        .flexrev{
+            display: flex;
+            flex-direction: row-reverse;
+            margin-top: 20px;
+            margin-bottom: 24px;
+        }
+        .have{
+            font-size: 11px;
+            color: #ffffff;
+                    }
+     .leftmar{
+         margin-left: 30px;
+             }
+             #companyname{
+                 margin-bottom: 50px;
+             }
+             .term{
+                 width: 70%;
+                 display: flex;
+                 margin-top: 30px;
+             }
+             .term div{
+                margin-right: 10px;
+             }
+             .lascolor{
+                 color: #ffffffe6;
+                 font-size: 12px;
+             }
+             #check{
+                 width: 10px;
+                 height: 10px;
+             }
+             .enter{
+                 width: 10%;
+                 padding: 1%;
+                 text-align: center;
+                 background-color: rgb(0, 132, 189);
+                 margin-top: 30px;
+                
+             }
+             #emaddon{
+                 font-size: 10px;
+                 color: red;
+             }
+             .rightflex{
+                 display: flex;
+                
+             }
+             .rightflex >div:nth-child(1){
+               width: 89%;
+              
+             }
+            
+             .rightdiv{
+                background: rgb(34, 34, 34);
+                margin-left: 10px;
+                width:30% ;
+                padding: 2%;
+                height: 250px;
+                 
+                 
+             }
+             .ind{
+                font-size: 16px;
+                color: #ffffffe6;
+             
+             }
+             .gap{
+                 
+                 height: 15px;
+             }
+             .rfmid{
+                border-bottom:1px solid rgb(54, 54, 54);
+                margin-bottom: -10px;
+             }
+             .rup{
+                 margin-top: 22px;
+                 margin-left: 50px;
+                 color: #ffffffe6;
+                 font-size: 16px;
+                 font-weight: 900;
+             }
+             .suntotal{
+                 margin-left: 180px;
+             }
+             .suntotal1{
+                 margin-left: 130px;
+             }
+             .flex21{
+                 display: flex;
+                 margin-top: -40px;
+             }
+             .topmar{
+                 margin-top: -30px;
+             }
+             .lsfl{
+               margin-top: 25px;
+             }
+             .totlrig{
+                 font-size: 17px;
+                 color: #ffffffe6;
+                 margin-right: 180px;
+                 font-weight: 900;
+             }
+             .rs{
+                font-size: 17px;
+                 color: #ffffffe6;
+                 font-weight: 900;
+             }
+             .black{
+                 font-size: 10px;
+                 font-weight: 700;
+                 color: #CCCCCC;
+                 width: 20%;
+                 position: relative;
+                 left: 1000px;
+                 top: -140px;
+                
+                
+                 
+             }
+             img{
+                 width: 20%;
+             }
+             a{
+                 text-decoration: none;
+             }
+             
+     
+    </style>
+</head>
+<body>
+    <img src="https://www.pluralsight.com/buy/static/assets/ps_logo.png"/>
+  <div class="outerDiv">
+      <div class="leftDiv">
+          <div class="flexl1">
+           <div class="leftDivleft">
+              <div class="flex">
+                  <div class="ball">1</div>
+                  <div><h2>Account details</h2></div>
+              </div>
+              <div class="info">
+                <div class="cccol">First name*</div>
+                <input type="text" id="firstname"/>
+            </div>
+              <div class="info">
+                  <div class="cccol">Email*</div>
+                  <input type="text" id="email"/>
+              </div>
+              <div class="info">
+                <div class="cccol">Country of residence*</div>
+                <select id="country" onclick="addvt()">
+                    <option value = "s"> -select One- </option> 
+                 
+                     <option value = "india"> India </option> 
+                    <option value = "unitedstateofamerica">United States of America</option>  
+                    <option value = "China"> china</option>  
+                    <option value = "nepal"> Nepal </option>  
+                    <option value = "australia"> Astralila</option>  
+                    <option value = "france"> France</option>  
+                    <option value = "germany">Germany</option>  
+                    <option value = "southafrica">South Africa</option>  
+                    <option value = "nigirea">Nigeria</option>  
+                    <option value = "mexico">Mexico</option>  
+                    <option value = "argentina"> Argentina</option>  
+                    <option value = "brazil"> Brazil</option>  
+                    <option value = "canada"> canada</option>  
+                    <option value = "singapore">singapore</option>  
+                    <option value = "sweden"> sweden</option>     
+               </select>
+
+                
+            </div>
+            <div id="addon">
+
+            </div>
+            
+            </div>
+            <div class="leftDivleft leftmar">
+                <div class="flexrev">
+                    <div><a href="../sign-up/singIn.html">Sign in</a></div>
+                    <div class="have">Already have an account?</div>
+                    
+                </div>
+                <div class="info">
+                  <div class="cccol">Last name*</div>
+                  <input type="text" id="lastname"/>
+              </div>
+                <div class="info" >
+                    <div class="cccol">Confirm Email*</div>
+                    <input type="text" id="cemail"/>
+                    <div id="emaddon"></div>
+                </div>
+                <div class="info">
+                  <div class="cccol">Company name</div>
+                 <input type="text" id="companyname"/>
+  
+                  
+              </div>
+              
+              </div>
+            
+
+      </div>
+      
+      <div class="term">
+          <div><input type="checkbox" id="check"/></div>
+          <div class="lascolor">
+            By checking here and continuing, I agree to the Pluralsight</div>
+            <div><a>Terms of Use</a></div>
+      </div>
+
+      <div class="enter"  onclick="enter()">
+          <a style="color: rgba(255, 255, 255, 0.9)!important;  font-size: 17px!important">Login</a>
+      </div>
+       
+  </div>
+  <div class="rightdiv">
+      <h3>Order summary</h3>
+      <div class="rfmid topmar">
+        <div class="rightflex">
+          <div>
+          <h6>PLAN</h6>
+          <div class="ind">Individual Standard Free Trial</div>
+        </div>
+        <div>
+            <h6>PRICE</h6>
+            <div class="ind">FREE</div>
+        </div>
+     
+      </div>
+      <div class="gap"></div>
+</div>
+<div class="rfmid">
+    <div class="flex">
+        <div class="suntotal"><h6>SUBTOTAL</h6></div>
+        <div class="rup">&#8377 0</div>
+        </div>
+        <div class="flex21">
+            <div class="suntotal1"><h6>ESTIMATED TAX ✝</h6></div>
+            <div class="rup">&#8377 0</div>
+            </div>
+
+
+
+
+    </div>
+    <div class="flex lsfl">
+        <div class="totlrig">Total due today
+        </div>
+        <div class="rs">&#8377 0</div>
+    </div>
+</div>
+
+  </div>
+  <div class="black">✝ Pluralsight is required by law to collect transaction taxes such as sales tax, VAT, GST or other 
+    similar taxes on purchases in some jurisdictions. 
+    The actual tax amount will be calculated based on 
+    the applicable jurisdictional tax rates when your order is processed.</div>
+    
+</body>
+</html>
+<script>
+
+
+function addvt(){
+
+
+    let y=document.getElementById('addon');
+        y.innerHTML=` <div class="info">
+                  <div class="cccol">VAT ID (optional)</div>
+                  <input type="text" id="va"/>
+              </div>`
+            
+        }
+let arr=JSON.parse(localStorage.getItem('userinformation'))
+function enter(){
+    let clear=0;
+    let fname=document.getElementById('firstname').value;
+    let lname=document.getElementById('lastname').value;
+    let email=document.getElementById('email').value;
+    let cemail=document.getElementById('cemail').value;
+    let con=document.getElementById('country').value;
+ 
+    if(fname==""){
+        let x=document.getElementById('firstname');
+        x.style.border="1px solid red"
+        clear++;
+    }else{
+        let x=document.getElementById('firstname');
+        x.style.border="none"
+  
+    }
+
+    if(lname==""){
+        let x=document.getElementById('lastname');
+        x.style.border="1px solid red"
+        clear++;
+    }else{
+        let x=document.getElementById('lastname');
+        x.style.border="none"
+       
+
+    }
+
+    if(email==""){
+        let x=document.getElementById('email');
+        x.style.border="1px solid red"
+        clear++;
+    }else{
+        let x=document.getElementById('email');
+        x.style.border="none"
+
+    }
+
+    if(cemail==""){
+        let x=document.getElementById('cemail');
+        x.style.border="1px solid red"
+        clear++;
+    }else{
+          
+        let x=document.getElementById('cemail');
+        x.style.border="none"
+       
+        
+    }
+    if(con=="s"){
+        let x=document.getElementById('country');
+        x.style.border="1px solid red"
+        clear++;
+    }
+    else{
+        let x=document.getElementById('country');
+        x.style.border="none";
+    
+
+    }
+
+    if(email!="" && email!=cemail){
+           let z=document.getElementById('emaddon');
+            z.innerHTML='Email does not match'
+            clear++;
+        }
+        else{
+            let z=document.getElementById('emaddon');
+            z.innerHTML=null
+
+        }
+     if(clear==0){
+     window.location.href="../../index.html"
+
+     }
+
+
+    }
+
+
+</script>
