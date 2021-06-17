@@ -30,15 +30,23 @@ body {
   flex-wrap: wrap;
   flex-direction: row;
   color: white;
-  width: 75%;
+  width: 80%;
   margin: auto;
 }
 
-.divContainer {
+a {
   background-color: #222222;
   display: flex;
   flex-wrap: wrap;
   width: 48%;
+  align-content: center;
+  margin: 1%;
+}
+.divContainer {
+  background-color: #222222;
+  display: flex;
+  flex-wrap: wrap;
+  width: 98%;
   align-content: center;
   margin: 1%;
 }

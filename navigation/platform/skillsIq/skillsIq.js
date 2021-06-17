@@ -44,7 +44,7 @@ let imageSelectory = () => {
   let len = 9;
   let x = Math.floor(Math.random() * len);
   let url = `/pluralWebsite/Images/skill (${x}).png`;
-  console.log(url)
+  console.log(url);
   return url;
 };
 
@@ -61,6 +61,7 @@ for (let i = 0; i < 150; i++) {
     hours,
     category,
     image,
+    url: "/pluralWebsite/navigation/platform/softwaredevelopment/softwaredevelopment.html",
   };
 }
 
@@ -73,6 +74,11 @@ let showData = (data) => {
   let parentDiv = document.getElementById("skillsData");
   let i = 0;
   for (let i = 0; i < data.length; i++) {
+    let linkA = document.createElement("a");
+    linkA.setAttribute(
+      "href",
+      "/pluralWebsite/navigation/platform/softwaredevelopment/softwaredevelopment.html"
+    );
     let divContainer = document.createElement("div");
     divContainer.setAttribute("class", "divContainer");
     let imgContainer = document.createElement("div");
@@ -82,22 +88,24 @@ let showData = (data) => {
     let nameContainer = document.createElement("div");
     let descripContainer = document.createElement("div");
     let img = document.createElement("img");
-
+    
     img.setAttribute("src", `${data[i].image}`);
     nameContainer.innerHTML = `${data[i].name}`;
     descripContainer.innerHTML = `<div><span>${data[i].course}</span> Courses 
-                                <span>${data[i].hours}</span> Hours 
-                                <img src="/pluralWebsite/Images/iq.png"></img> Get Your Skill Iq
-                                </div>`;
-
+    <span>${data[i].hours}</span> Hours 
+    <img src="/pluralWebsite/Images/iq.png"></img> Get Your Skill Iq
+    </div>`;
+    
     imgContainer.appendChild(img);
     divContainer.appendChild(imgContainer);
-
+    
     metaContainer.appendChild(nameContainer);
     metaContainer.appendChild(descripContainer);
     divContainer.appendChild(metaContainer);
-
-    parentDiv.appendChild(divContainer);
+    
+    console.log(linkA)
+    linkA.appendChild(divContainer);
+    parentDiv.appendChild(linkA);
   }
 };
 
