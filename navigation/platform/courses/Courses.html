@@ -4,12 +4,164 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Courses</title>
+    <link rel="stylesheet" href="/pluralWebsite/CSS_Files/nav-bar.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="courses.css">
 </head>
 <body>
-    <h2>Browse</h2>
-    <div id="container">
+    <div id="nav-bar">
+      <!--Brand nav logo-->
+    </div>
+    <div id="browseContainer">
+        <div>
+            <div>
+                <img src="/pluralWebsite/Images/logo-skills.png" alt="">
+            </div>
+            <div><h1><b>Thousands of courses authored by<br>
+our network of industry experts</b></h1></div>
+        </div>
+    </div>
+    
+    <div id="techContainer">
+        <ul>
+            <li onclick="classToggle('newest');" id="listTechCont1">New this month</li>
+            <li onclick="classToggle('trend')" id='listTechCont2'>Trending</li>
+        </ul>
+    </div>
+</hr>
+<div id="coursesDiv">     
+    <div id="newest" class="newest showTab">
+        <div class="courses">
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb_GcnNnLBSYlHmmdf-4HTtbI4EWkfQC7XiQ&usqp=CAU" alt="">
+        </div>
+        <div class="descrip">
+            <div>
+                <h3>EXPANDED
+Automating Multi-vendor and Cloud Networks Using Ansible <br><span>By Nick Russo</span></h3>
+            </div>
+            <div>
+                <p>3h 30m</p>
+                <p>Beginner</p>
+            </div>
+        </div>
+    </div>
+    <div class="courses">
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb_GcnNnLBSYlHmmdf-4HTtbI4EWkfQC7XiQ&usqp=CAU" alt="">
+        </div>
+        <div class="descrip">
+            <div>
+                <h3>EXPANDED
+Automating Multi-vendor and Cloud Networks Using Ansible <br><span>By Nick Russo</span></h3>
+            </div>
+            <div>
+                <p>3h 30m</p>
+                <p>Beginner</p>
+            </div>
+        </div>
+    </div>
+    <div class="courses">
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb_GcnNnLBSYlHmmdf-4HTtbI4EWkfQC7XiQ&usqp=CAU" alt="">
+        </div>
+        <div class="descrip">
+            <div>
+                <h3>EXPANDED
+Automating Multi-vendor and Cloud Networks Using Ansible <br><span>By Nick Russo</span></h3>
+            </div>
+            <div>
+                <p>3h 30m</p>
+                <p>Beginner</p>
+            </div>
+        </div>
+    </div>
+    <div class="courses">
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb_GcnNnLBSYlHmmdf-4HTtbI4EWkfQC7XiQ&usqp=CAU" alt="">
+        </div>
+        <div class="descrip">
+            <div>
+                <h3>EXPANDED
+Automating Multi-vendor and Cloud Networks Using Ansible <br><span>By Nick Russo</span></h3>
+            </div>
+            <div>
+                <p>3h 30m</p>
+                <p>Beginner</p>
+            </div>
+        </div>
+    </div>
+</div>
 
+<div id="trend" class="trend">
+    <div class="courses">
+        <div>
+            <img src="/pluralWebsite/Images/googleCloud.jpg" alt="">
+        </div>
+        <div class="descrip">
+            <div>
+                <h3>EXPANDED
+Automating Multi-vendor and Cloud Networks Using Ansible <br><span>By Nick Russo</span></h3>
+            </div>
+            <div>
+                <p>3h 30m</p>
+                <p>Beginner</p>
+            </div>
+        </div>
+    </div>
+    <div class="courses">
+        <div>
+            <img src="/pluralWebsite/Images/googleCloud.jpg" alt="">
+        </div>
+        <div class="descrip">
+            <div>
+                <h3>EXPANDED
+Automating Multi-vendor and Cloud Networks Using Ansible <br><span>By Nick Russo</span></h3>
+            </div>
+            <div>
+                <p>3h 30m</p>
+                <p>Beginner</p>
+            </div>
+        </div>
+    </div>
+    <div class="courses">
+        <div>
+            <img src="/pluralWebsite/Images/googleCloud.jpg" alt="">
+        </div>
+        <div class="descrip">
+            <div>
+                <h3>EXPANDED
+Automating Multi-vendor and Cloud Networks Using Ansible <br><span>By Nick Russo</span></h3>
+            </div>
+            <div>
+                <p>3h 30m</p>
+                <p>Beginner</p>
+            </div>
+        </div>
+    </div>
+    <div class="courses">
+        <div>
+            <img src="/pluralWebsite/Images/googleCloud.jpg" alt="">
+        </div>
+        <div class="descrip">
+            <div>
+                <h3>EXPANDED
+Automating Multi-vendor and Cloud Networks Using Ansible <br><span>By Nick Russo</span></h3>
+            </div>
+            <div>
+                <p>3h 30m</p>
+                <p>Beginner</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div> 
+
+    <div id="container">
+        <h2>Browse</h2>
 
         <div>
             <div class="searchDiv">
@@ -60,13 +212,24 @@
                 
                 <button onclick="clearAllFilter();">Clear all filter</button>
             </div>
-            <div id="courses"></div>
-            <div>
-                <button onclick="currentShowData('prev');">Prev</button>
-                <button onclick="currentShowData('next');">Next</button>
+            <div id="coursesDiv">
+                <div id="courses"></div>
+                <div>
+                    <button onclick="currentShowData('prev');"><</button>
+                    <div id="dots"></div>
+                    <button onclick="currentShowData('next');">></button>
+                </div>
             </div>
         </div>
 
 
 <script src="courses.js"></script>
-</body></html>
+</body>
+<script>
+    $(document).ready(function () {
+      $("#nav-bar").load("/pluralWebsite/navigation/nav-bar.html");
+    });
+  </script>
+  <script src="/pluralWebsite/Js_files/index.js"></script>
+
+</html>

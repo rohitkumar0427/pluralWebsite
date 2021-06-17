@@ -124,8 +124,16 @@ let showData = (data, len) => {
     divContainer.appendChild(descripContainer);
 
     parentDiv.appendChild(divContainer);
+
+    let dotsDiv = document.getElementById("dots");
+    // count1++
+    let count = data.length/15;
+    
+    dotsDiv.innerHTML=`${len}`;
+    
   }
 };
+let count1 = 0;
 
 if (localStorage.getItem("allCourseData") === null) {
   var allCourseData = [];
@@ -287,7 +295,7 @@ let sortBy = (x) => {
       return b.rating - a.rating;
     });
   } else if (x === "newest") {
-    currentSearchedData.sort((a,b) => { 
+    currentSearchedData.sort((a, b) => {
       return a.addedTime.localeCompare(b.addedTime);
     });
   } else if (x === "ascending") {
@@ -300,4 +308,30 @@ let sortBy = (x) => {
     });
   }
   showData(currentSearchedData, temp);
+};
+
+let classToggle = (x) => {
+  if (x === "newest") {
+    let tag = document.getElementById("newest").classList;
+    if (!tag.contains("showTab")) {
+      console.log("hi");
+      tag.add("showTab");
+      document.getElementById("trend").classList.remove("showTab");
+      let li = document.getElementById("listTechCont1");
+      li.setAttribute("style", "border-bottom: 6px solid magenta");
+      li = document.getElementById("listTechCont2");
+      li.removeAttribute("style", "border-bottom");
+    }
+  }
+  if (x === "trend") {
+    let tag = document.getElementById("trend").classList;
+    if (!tag.contains("showTab")) {
+      tag.add("showTab");
+      document.getElementById("newest").classList.remove("showTab");
+      let li = document.getElementById('listTechCont2');
+      li.setAttribute("style", 'border-bottom: 6px solid magenta')
+      li = document.getElementById('listTechCont1');
+      li.setAttribute("style", 'border-bottom: 6px solid black')
+    }
+  }
 };

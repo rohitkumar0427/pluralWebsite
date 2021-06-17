@@ -1,113 +1,206 @@
 body {
-    background-color: black;
-    color: white;
+  background-color: black;
+  color: white;
 }
-#container {
-    /* width: 95%;*/
+#browseContainer {
+  display: flex;
+  position: relative;
+  height: 260px;
+  top: 80px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 1.2rem;
+  background-image: url("https://images.squarespace-cdn.com/content/v1/5d4cfd87082420000108b311/1566718849902-809OYSILCPJLAKT97XWE/ke17ZwdGBToddI8pDm48kNvT88LknE-K9M4pGNO0Iqd7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1USOFn4xF8vTWDNAUBm5ducQhX-V3oVjSmr829Rco4W2Uo49ZdOtO_QXox0_W7i2zEA/futuristic-technology-abstract-background-beautiful-footage-087637197_prevstill.jpeg?format=2500w");
+}
+#browseContainer img {
+  padding-bottom: 1.5rem;
+  width: 120px;
+  height: 30px;
+}
+#techContainer {
+    position: relative;
+    top: 120px;
+    height: 240px;
+    margin: 0 2rem;
+}
+#techContainer > ul {
+    display: flex;
+    padding: 1rem 0;
+    list-style: none;
+    font-size: 1.4rem;
+    gap: 2rem;
+    border-bottom: 1px solid gray;
+}
+#techContainer > ul > li{
+    cursor: pointer;
+}
+#techContainer > ul > li:first-child{
+    border-bottom: 6px solid magenta
+}
+
+#newest, #trend {
+    margin: 0 2rem;
+    gap: 1rem;
+    /* overflow-x: hidden; */
+}
+
+.courses {
     display: flex;
     flex-direction: column;
+    width: 25%;
+    height: 240px;
+    background-color: red;
+    margin-top: -40px;
+    background-color: #222222;
+    box-shadow: 0 5px 5px 0 #121212;
 }
-#container > div {
-    display: flex;
-    flex-direction: row;
+.courses img {
     width: 100%;
-    gap: 1rem;
-    height: max-content;
+    height: 80px;
 }
-
-.searchDiv {
+.descrip {
+    flex-grow: 1;
     display: flex;
-    flex-grow: 1;
-    padding: 0.1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 8px;
 }
-
-.searchDiv > input {
-    flex-grow: 1;
-    font-size: 1.2rem;
-    background-color: #212121;
-    color: white;
-    border: white;
-    padding-left: 1rem;
+.descrip h3 {
+    font-size: 1em;
 }
-.searchDiv > button {
-    width: 50px;
-    background-color: #212121;
+.descrip span, .descrip p {
+    font-size: 0.8em;
+}
+.descrip span {
     color: gray;
-    border: none;
-}
-.searchDiv > button:nth-child(2) {    
-    border-right: 1px solid gray;
 }
 
-.sortOptions > div:first-child {
-    padding: 0.2rem 4rem;
-    font-size: 2rem;
-    border: 1px solid white;
+.descrip > div:last-child {
+    display: flex;
+    gap: 2rem;
 }
 
-#sortOptions {
-    position: absolute;
-    /* right: 2%; */
-    width: 11%;
-    top: 20%;
-    background-color: #212121;
-    padding: 1rem;
-    font-size: 1.2rem;
+.newest, .trend {
+    display: flex;
 }
-#sortOptions > div{
-     cursor: pointer;
-}
-
-.options {
+.showTab {
     display: none;
 }
 
+#container {
+  /* width: 95%;*/
+  margin-top: 80px;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+}
+#container > h2 {
+    padding: 0 0 1rem 1rem;
+
+}
+#container > div {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 1rem;
+  height: max-content;
+}
+
+.searchDiv {
+  display: flex;
+  flex-grow: 1;
+  padding: 0.1rem;
+}
+
+.searchDiv > input {
+  flex-grow: 1;
+  font-size: 1.2rem;
+  background-color: #212121;
+  color: white;
+  border: white;
+  padding-left: 1rem;
+}
+.searchDiv > button {
+  width: 50px;
+  background-color: #212121;
+  color: gray;
+  border: none;
+}
+.searchDiv > button:nth-child(2) {
+  border-right: 1px solid gray;
+}
+
+.sortOptions > div:first-child {
+  padding: 0.2rem 4rem;
+  font-size: 2rem;
+  border: 1px solid white;
+}
+
+#sortOptions {
+  position: absolute;
+  /* right: 2%; */
+  width: 11%;
+  top: 20%;
+  background-color: #212121;
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+#sortOptions > div {
+  cursor: pointer;
+}
+
+.options {
+  display: none;
+}
+
 .show {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 #filter {
-    width: 20%;
-    padding: 2rem;
+  width: 20%;
+  padding: 2rem;
 }
 
-#courses {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-    padding: 3rem;
-    
+#coursesDiv {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  padding: 3rem;
 }
 .divContainer {
-    display: flex;
-    flex-direction: column;
-    padding: 1.5rem;
-    border-bottom: 1px solid gray;
-    gap: 8px;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  border-bottom: 1px solid gray;
+  gap: 8px;
 }
 
 .divContainer > div:first-child > div:first-child {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .divContainer > div:first-child > div:last-child::before {
-    content: "by ";
+  content: "by ";
 }
 
 .divContainer > div:last-child {
-    display: flex;
-    color: gray;
-    gap: 2rem;
+  display: flex;
+  color: gray;
+  gap: 2rem;
 }
 .divContainer > div:last-child > div {
-    width: 15%;
+  width: 15%;
 }
 
 #filter > ul {
-    list-style-type: none;
-    list-style-position: outside;
+  list-style-type: none;
+  list-style-position: outside;
 }
 
 /* #filter > ul > li {
@@ -115,7 +208,22 @@ body {
 } */
 
 #filter > ul {
-    padding: 0px 15px;
+  padding: 0px 15px;
 }
 
-
+#coursesDiv button {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: magenta;
+    font-size: 2rem;
+}
+#coursesDiv > div:last-child {
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
