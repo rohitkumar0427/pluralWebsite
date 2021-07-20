@@ -31,26 +31,26 @@ In this project, a few technologies and packages were used, listed below
 
 ### Login Page
 
-![Login page](https://github.com/rohitkumar0427/pluralWebsite/login.jpg)
+![Login page](https://github.com/rohitkumar0427/pluralWebsite/projectImages/login.jpg)
 
 ### Comparison page
 
-![Comparison page](https://github.com/rohitkumar0427/pluralWebsite/comparison.jpg)
+![Comparison page](https://github.com/rohitkumar0427/pluralWebsite/projectImages/comparison.jpg)
 
 ### Courses page
 
-![create new task page](https://github.com/rohitkumar0427/pluralWebsite/create.jpg)
+![create new task page](https://github.com/rohitkumar0427/pluralWebsite/projectImages/create.jpg)
 
 ### Landing page
 
-![Landing page](https://github.com/rohitkumar0427/pluralWebsite/landingPage.jpg)
+![Landing page](https://github.com/rohitkumar0427/pluralWebsite/projectImages/landingPage.jpg)
 
 ### Notes page
 
-![Notes page](https://github.com/rohitkumar0427/pluralWebsite/notes.jpg)
+![Notes page](https://github.com/rohitkumar0427/pluralWebsite/projectImages/notes.jpg)
 
 ### Video page
 
-![Video page](https://github.com/rohitkumar0427/pluralWebsite/video.jpg)
+![Video page](https://github.com/rohitkumar0427/pluralWebsite/projectImages/video.jpg)
 
 ##I want to take this opportunity to thank you for visiting here.
