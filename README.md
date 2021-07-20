@@ -31,26 +31,26 @@ In this project, a few technologies and packages were used, listed below
 
 ### Login Page
 
-![Login page](https://github.com/rohitkumar0427/pluralWebsite/tree/master/projectImages/login.jpg)
+![Login page](https://github.com/rohitkumar0427/pluralWebsite/tree/master/projectImages/login.JPG)
 
 ### Comparison page
 
-![Comparison page](https://github.com/rohitkumar0427/pluralWebsite/tree/master/projectImages/comparison.jpg)
+![Comparison page](https://github.com/rohitkumar0427/pluralWebsite/tree/master/projectImages/comparison.JPG)
 
 ### Courses page
 
-![create new task page](https://github.com/rohitkumar0427/pluralWebsite/tree/master/projectImages/create.jpg)
+![create new task page](https://github.com/rohitkumar0427/pluralWebsite/tree/master/projectImages/create.JPG)
 
 ### Landing page
 
-![Landing page](https://github.com/rohitkumar0427/pluralWebsite/tree/master/projectImages/landingPage.jpg)
+![Landing page](https://github.com/rohitkumar0427/pluralWebsite/tree/master/projectImages/landingPage.JPG)
 
 ### Notes page
 
-![Notes page](https://github.com/rohitkumar0427/pluralWebsite/tree/master/projectImages/notes.jpg)
+![Notes page](https://github.com/rohitkumar0427/pluralWebsite/tree/master/projectImages/notes.JPG)
 
 ### Video page
 
-![Video page](https://github.com/rohitkumar0427/pluralWebsite/tree/master/projectImages/video.jpg)
+![Video page](https://github.com/rohitkumar0427/pluralWebsite/tree/master/projectImages/video.JPG)
 
 ##I want to take this opportunity to thank you for visiting here.
