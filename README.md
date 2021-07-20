@@ -53,4 +53,4 @@ In this project, a few technologies and packages were used, listed below
 
 ![Video page](https://github.com/rohitkumar0427/pluralWebsite/blob/master/projectImages/video.JPG)
 
-## I want to take this opportunity to thank you for visiting here.
+## And lastly, I want to take this opportunity to thank you for visiting here.
