@@ -1,0 +1,113 @@
+
+body{
+    background: #222;
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Roboto', sans-serif;
+}
+.outerdiv{
+    display: flex;
+
+}
+.videos{
+    width: 70%;
+
+}
+.content{
+    background-color: rgba(30, 36, 41, 0.9);
+}
+.contenthead{
+    width: 80%;
+    margin-left: 10px;
+    
+}
+.contentslect{
+    display: flex;
+    margin-left: 10px;
+    margin-bottom: 5px;
+   
+
+
+}
+.table{
+    width: 35%;
+   margin-right: 10px;
+   cursor: pointer;
+   font-size: 30px;
+}
+.notes{
+    width: 12%;
+    cursor: pointer;
+    font-size: 30px;
+}
+#iframe1{
+   
+    height: 750px;
+    overflow-y: scroll;
+}
+#info{
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+.infohead{
+    display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #ffffffb3;
+}
+.headinfo{
+    display: flex;
+    padding: 2%;
+    
+}
+.num{
+    width: 25px;
+    margin-right: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 2px solid gray;
+    padding-top: 5px;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 5px;
+}
+.hp{
+    margin-top: -20px;
+}
+.hp > p{
+    margin-top: -20px;
+}
+.csss{
+    display: flex;
+    color: #ffffff;
+    padding: 1.5%;
+}
+.pl{
+   width: 5%;
+    margin-right: 10px;
+   
+}
+.i{
+    width: 70%;
+    margin-right: 10px;
+
+}
+.imag{
+    position: absolute;
+    top: 0px;
+}
+.imag > img{
+  width: 20%;
+}
+.ntdata{
+    padding: 2%;
+    
+    font-size: 20px;
+    font-weight: 700;
+    border-bottom:3px solid gray;
+}
+a{
+  text-decoration: none;
+  color: #ffffff;
+}
+

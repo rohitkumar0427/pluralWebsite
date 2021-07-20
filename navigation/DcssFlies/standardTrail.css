@@ -1,0 +1,206 @@
+
+body{
+    background: rgb(24, 24, 24);
+    padding: 0%;
+    margin: 0%;
+}
+a{
+    font-size: 11px;
+    color: #2ea0d4;
+    font-weight: 900;
+}
+h2,h3{
+    font-size: 20px;
+    color: #ffffffe6;
+    font-weight: 900;
+}
+h6{
+    font-size: 12px;
+    color: #ffffffa6;
+}
+.outerDiv{
+    margin-top: 100px;
+     width: 60%;
+     display: flex;
+     margin-left: 280;
+   
+     
+    
+}
+.leftDiv{
+    width: 60%;
+    background: rgb(34, 34, 34);
+    padding: 2%;
+}
+.leftDivleft{
+    width: 50%;
+}
+.flex{
+    width: 100%;
+   display: flex;
+ 
+}
+.flexl1{
+    width: 100%;
+   display: flex;
+   border-bottom:1px solid rgb(54, 54, 54);
+   
+}
+.ball{
+    width: 27px;
+    height: 24px;
+   border-radius: 50%;
+    background: rgb(54, 54, 54);
+    color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+    margin-top: 11px;
+    padding-top: 2%;
+    margin-right: 5px;
+}
+input{
+    width: 100%;
+    padding: 2%;
+    background-color:  rgb(59, 59, 59);
+}
+select{
+    width: 100%;
+    padding: 2%;
+    background-color:  rgb(59, 59, 59);
+    color: #CCCCCC;
+}
+.cccol{
+    color: #CCCCCC;
+    font-size: 14px;
+}
+.info{
+    margin-bottom: 15px;
+}
+.flexrev{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 20px;
+    margin-bottom: 24px;
+}
+.have{
+    font-size: 11px;
+    color: #ffffff;
+            }
+.leftmar{
+ margin-left: 30px;
+     }
+     #companyname{
+         margin-bottom: 50px;
+     }
+     .term{
+         width: 70%;
+         display: flex;
+         margin-top: 30px;
+     }
+     .term div{
+        margin-right: 10px;
+     }
+     .lascolor{
+         color: #ffffffe6;
+         font-size: 12px;
+     }
+     #check{
+         width: 10px;
+         height: 10px;
+     }
+     .enter{
+         width: 10%;
+         padding: 1%;
+         text-align: center;
+         background-color: rgb(0, 132, 189);
+         margin-top: 30px;
+        
+     }
+     #emaddon{
+         font-size: 10px;
+         color: red;
+     }
+     .rightflex{
+         display: flex;
+        
+     }
+     .rightflex >div:nth-child(1){
+       width: 89%;
+      
+     }
+    
+     .rightdiv{
+        background: rgb(34, 34, 34);
+        margin-left: 10px;
+        width:30% ;
+        padding: 2%;
+        height: 250px;
+         
+         
+     }
+     .ind{
+        font-size: 16px;
+        color: #ffffffe6;
+     
+     }
+     .gap{
+         
+         height: 15px;
+     }
+     .rfmid{
+        border-bottom:1px solid rgb(54, 54, 54);
+        margin-bottom: -10px;
+     }
+     .rup{
+         margin-top: 22px;
+         margin-left: 50px;
+         color: #ffffffe6;
+         font-size: 16px;
+         font-weight: 900;
+     }
+     .suntotal{
+         margin-left: 180px;
+     }
+     .suntotal1{
+         margin-left: 130px;
+     }
+     .flex21{
+         display: flex;
+         margin-top: -40px;
+     }
+     .topmar{
+         margin-top: -30px;
+     }
+     .lsfl{
+       margin-top: 25px;
+     }
+     .totlrig{
+         font-size: 17px;
+         color: #ffffffe6;
+         margin-right: 180px;
+         font-weight: 900;
+     }
+     .rs{
+        font-size: 17px;
+         color: #ffffffe6;
+         font-weight: 900;
+     }
+     .black{
+         font-size: 10px;
+         font-weight: 700;
+         color: #CCCCCC;
+         width: 20%;
+         position: relative;
+         left: 1000px;
+         top: -140px;
+        
+        
+         
+     }
+     img{
+         width: 20%;
+     }
+     a{
+         text-decoration: none;
+     }
+     
+

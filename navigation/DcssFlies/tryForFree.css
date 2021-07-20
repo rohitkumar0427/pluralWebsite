@@ -1,0 +1,548 @@
+
+        body{
+            background: #000;
+            padding: 0%;
+            margin: 0%;
+            font-family: 'Roboto', sans-serif;
+            
+        }
+        .firstBox{
+            width: 100%;
+            background-image:url("https://www.pluralsight.com/content/pluralsight/en/pricing/free-trial/jcr:content/main/generic_block/image-res.img.c8abfda9-07fb-44f0-bdfd-6596e73f3f62.jpg");
+            height: 320px;
+    
+        }
+        a{
+            text-decoration: none;
+        }
+      
+        .firstBoxText{
+            text-align: center;
+            width: 100%;
+            margin-top: 70px;
+
+         
+        }
+        .firstBoxText > h6{
+           color: #E40084;
+           font-size: 17px;
+           font-weight: 900;
+        }
+        .firstBoxText > h1{
+           color: #FFFFFF;
+           font-size: 56px;
+           font-weight: 900;
+        }
+        .firstBoxText > p{
+           color: #FFFFFF;
+           font-size: 20px;
+          
+           font-weight: 900;
+        }
+        .secondBox{
+            background: #181818;
+         
+            width: 100%;
+        }
+        .scleft{
+            width: 30%;
+           margin-left: 750px;
+           margin-top: 80px;
+           
+
+        }
+        .scleft > h5{
+            margin-top: -20px;
+            font-size: 16px;
+        }
+        .scleft > h3,h5{
+        color: #FFFFFF;
+        
+            
+
+        }
+        .scleft > h3{
+            font-size: 32px;
+            font-weight: 900;
+        } 
+    
+        .inditrail{
+            width: 100%;
+            text-align: center;
+        }
+        .inditrail > h5{
+            font-size: 22px;
+           font-weight: 900;
+           color: #FFFFFF;
+  
+        }
+        .second{
+            width: 80%;
+            margin-left: 350px;
+            display: flex;
+        }
+        .secfle{
+            width: 18%;
+            margin-right: 20px;
+        }
+        .firstlineflex{
+            display: flex;
+        }
+        .boximg{
+            width: 12%;
+            margin-right: 6px;
+        }
+        .boximg > img{
+            width: 100%;
+        }
+        .boxhead{
+            padding: 1%;
+            font-size: 20px;
+            font-weight: 800;
+            color: #DDDDDD;
+        }
+        .secfle > p{ 
+            color: #DDDDDD;
+            font-size: 17px;
+        }
+        .pmarign{
+            margin-top: -12px;
+        }
+.space{
+    width: 100%;
+    margin-top: 80px;
+}
+
+.package{
+width: 70%;
+display: flex;
+margin:30px auto;
+
+
+}
+
+.packageleft{
+    width: 50%;
+    box-shadow:  5px 5px 3px#222222,
+             -5px -5px 3px #181818;
+             background: linear-gradient(
+180deg
+,#181818 0%,#222222 100%);
+
+}
+
+#pafirstline{
+    width: 28%;
+    margin: auto;
+    display: flex;
+    margin: auto;
+}
+#changepa > h2{
+    font-size: 36px;
+    color: #FFFFFF;
+    font-weight: 900;
+}
+
+.pafourthline{
+    margin-top: 10px;
+    width: 80%;
+    margin-left: 45px;
+    text-align: center;
+    font-size: 17px;
+    color: #FFFFFF;
+   
+}
+.pafithline{
+    margin-left: 190px;
+    margin-top: 30px;
+    width: 33%;
+    text-align: center;
+    padding: 2%;
+    background-image: linear-gradient(to right,#F05A28,#EC008C,#F05A28);
+    border-radius: 5px;
+}
+
+.pasixthline{
+    width: 90%;
+    margin:20px 9px;
+    color: #FFFFFF;
+    text-align: center;
+    font-weight: 900;
+}
+.pafithline > a{
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: 900;
+}
+
+      
+.toginner{
+            width: 10%;
+            display: flex;
+            margin: auto;
+            font-size: 20px;
+            color: #FFFFFF;
+        }
+        
+
+      #togid{
+          margin-left: 10px;
+          margin-right: 10px;
+      }
+
+
+        .switch {
+       position: relative;
+      display: inline-block;
+      width: 60px;
+      height: 30px;
+      
+}
+
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #363636;;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 23px;
+  width: 23px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #363636;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px  #363636;
+}
+
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(10px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+.bop{
+    padding: 0.2%;
+    text-align: center;
+    background-color: #F7A614;
+    position: absolute;
+    color: black;
+    font-weight: 900;
+    width: 34.5%;
+    
+}
+
+.des{
+    width: 25px;
+    height: 25px;
+    border-top: 1px solid #363636;
+    border-left: 1px solid #363636;
+
+}
+.des1{
+    width: 25px;
+    height: 25px;
+    border-top: 1px solid #363636;
+    border-right: 1px solid #363636;
+
+}
+.table{
+    width: 80%;
+    margin:150px auto;
+    
+    
+}
+.headtb{
+    display: flex;
+
+}
+.headtb  div:nth-child(1){
+    margin-right: 100px;
+
+}
+.headtb  div:nth-child(2) > div{
+    margin-right: 40px;
+    margin-left: 600px;
+
+}
+.headtb  div:nth-child(3){
+    margin-right: 40px;
+    margin-top: -10px;
+    font-size: 15px;
+    font-weight: 900;
+
+}
+.headtb  div:nth-child(4) > div{
+    margin-right: 200px;
+
+}
+.headtb  div:nth-child(5) > div{
+    margin-right: 50px;
+
+}
+.headtb  div:nth-child(6){
+    color: #EC008C;
+    margin-right: 50px;
+    margin-top: -10px;
+    font-size: 15px;
+    font-weight: 900;
+
+}
+tr{
+    padding: 1%;
+}
+
+.bor td{
+
+    margin-right: 20px;
+    width: 10%;
+    padding: 0.5%;
+   
+}
+
+.len{
+   
+
+    margin-right: 500px;
+    
+}
+.len1{
+    padding: 1%;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    font-size: 24px;
+
+}
+.len11{
+    padding: 1%;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    font-size: 24px;
+    border-right: none!important;
+
+}
+
+.le{
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: 900;
+}
+.le2{
+    text-align: center;
+    font-size: 15px;
+    font-weight: 900;
+}
+.lenlf{
+    color: #FFFFFF;
+    font-size: 15px;
+}
+.lile{
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: 900;
+    border-right: none!important;
+ 
+
+}
+.ly{
+    color: yellow;
+}
+.lp{
+    color: purple;
+}
+.lile2{
+    text-align: center;
+    font-size: 15px;
+    font-weight: 900;
+    border-right: none!important;
+ 
+
+}
+.eve{
+    background: #222;
+}
+.lw{
+    font-size: 13px;
+    color: #FFFF;
+}
+.space2{
+    margin-top: 20px;
+}
+.lastpicBox{
+    width: 100%;
+    margin-top: -30px;
+    background-image: url("https://www.pluralsight.com/content/dam/pluralsight2/product/v2/skills-bg-cs.jpg");
+    
+}
+.lastpictext{
+    width: 50%;
+    margin:150px auto;
+    text-align: center;
+  
+}
+.lastimageboxs{
+    display: flex;
+    width: 70%;
+    margin: auto;
+}
+.lastimageboxs div{
+    width: 13%;
+    margin-right: 80px;
+}
+.lastimageboxs div > img{
+    width: 100%;
+   
+}
+.lastpspace{
+    margin-top:70px;
+}
+.lastq{
+    width: 100%;
+    background: #181818;
+  
+}
+.lastqa{
+    width: 80%;
+    display: flex;
+    margin:100px auto;
+    margin-bottom: 100px;
+
+}
+.faq{
+    width: 50%;
+}
+.faqa{
+    width: 50%;
+}
+
+
+
+
+.lflex div span:after {
+  content: ' \02C5';
+}
+.sp{
+    width: 70%;
+    margin-right: 200px;
+}
+.lflex{
+    
+    font-size: 20px;
+    font-weight: 300;
+    color: #FFFFFF;
+    display: flex;
+}
+.fapadd{
+    padding: 1.5%;
+    border-bottom: 0.1px solid #ddd;
+}
+.fapadd p{
+    color: #EEEEEE;
+    font-size: 15px;
+}
+.lasth2{
+    color: #FFFFFF;
+    font-size: 36px;
+    font-weight: 900;
+    text-align: center;
+    margin-top: 120px;
+}
+
+
+
+
+
+
+.twitterBox{
+    width: 70%;
+    margin: 30px auto;
+   display: flex;
+ 
+}
+.twitterBox div:nth-child(2){ 
+ width: 80%;
+  margin: auto;  
+  
+ 
+}
+
+
+.twfldiv{
+    display: flex;
+}
+.twfldiv  div:nth-child(1){
+    width: 30%;
+}
+.twfldiv  div:nth-child(2){
+    width: 30%;
+}
+.twfldiv  div:nth-child(3){
+    width: 30%;
+}
+
+
+.mySlides {
+  
+  display: none;
+  
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: relative;
+  top: 100px;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0px;
+  border-radius: 3px 0 0 3px;
+}
+
+
+
+
+
+
