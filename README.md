@@ -31,7 +31,7 @@ In this project, a few technologies and packages were used, listed below
 
 ### Login Page
 
-![Login page](https://github.com/rohitkumar0427/pluralWebsite/tree/master/projectImages/login.JPG)
+![Login page](https://github.com/rohitkumar0427/pluralWebsite/blob/master/projectImages/login.JPG)
 
 ### Comparison page
 
