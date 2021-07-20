@@ -39,7 +39,7 @@ In this project, a few technologies and packages were used, listed below
 
 ### Courses page
 
-![create new task page](https://github.com/rohitkumar0427/pluralWebsite/blob/master/projectImages/create.JPG)
+![Courses page](https://github.com/rohitkumar0427/pluralWebsite/blob/master/projectImages/courses.JPG)
 
 ### Landing page
 
